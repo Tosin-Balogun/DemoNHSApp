@@ -7,18 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E7E4DEF2B9F46470042625E /* ProfileCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E4DEE2B9F46470042625E /* ProfileCardView.swift */; };
+		4E7E4DF22B9F4ED10042625E /* MessageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E4DF12B9F4ED10042625E /* MessageDetailView.swift */; };
+		4E7E4DF52B9F4FA90042625E /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E4DF42B9F4FA90042625E /* MessageListView.swift */; };
 		4EC54BCC2B96FF05003EA856 /* DemoNHSAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC54BCB2B96FF05003EA856 /* DemoNHSAppApp.swift */; };
 		4EC54BCE2B96FF05003EA856 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC54BCD2B96FF05003EA856 /* ContentView.swift */; };
 		4EC54BD02B96FF08003EA856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC54BCF2B96FF08003EA856 /* Assets.xcassets */; };
 		4EC54BD32B96FF08003EA856 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC54BD22B96FF08003EA856 /* Preview Assets.xcassets */; };
+		4EC54BDE2B970977003EA856 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC54BDD2B970977003EA856 /* HomeView.swift */; };
+		4EC54BE02B9709A0003EA856 /* ServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC54BDF2B9709A0003EA856 /* ServicesView.swift */; };
+		4EC54BE22B9709B3003EA856 /* YourHealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC54BE12B9709B3003EA856 /* YourHealthView.swift */; };
+		4EC54BE42B9709BF003EA856 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC54BE32B9709BF003EA856 /* MessagesView.swift */; };
+		4EC54BE72B972B22003EA856 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC54BE62B972B22003EA856 /* CardView.swift */; };
+		4ECCCB1C2B9EE76000912BCA /* PromoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECCCB1B2B9EE76000912BCA /* PromoCardView.swift */; };
+		4ED1B0882BA0708E0047BE43 /* AccountSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED1B0872BA0708E0047BE43 /* AccountSettingsView.swift */; };
+		4ED1B08B2BA095BB0047BE43 /* HelpSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED1B08A2BA095BB0047BE43 /* HelpSupportView.swift */; };
+		4ED1B08D2BA0A95A0047BE43 /* ProfileButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED1B08C2BA0A95A0047BE43 /* ProfileButtonView.swift */; };
+		4ED1B08F2BA0CC300047BE43 /* UrgentCareOnlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED1B08E2BA0CC300047BE43 /* UrgentCareOnlineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E7E4DEE2B9F46470042625E /* ProfileCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCardView.swift; sourceTree = "<group>"; };
+		4E7E4DF12B9F4ED10042625E /* MessageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailView.swift; sourceTree = "<group>"; };
+		4E7E4DF42B9F4FA90042625E /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
 		4EC54BC82B96FF05003EA856 /* DemoNHSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoNHSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC54BCB2B96FF05003EA856 /* DemoNHSAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoNHSAppApp.swift; sourceTree = "<group>"; };
 		4EC54BCD2B96FF05003EA856 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4EC54BCF2B96FF08003EA856 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EC54BD22B96FF08003EA856 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4EC54BDD2B970977003EA856 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4EC54BDF2B9709A0003EA856 /* ServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesView.swift; sourceTree = "<group>"; };
+		4EC54BE12B9709B3003EA856 /* YourHealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourHealthView.swift; sourceTree = "<group>"; };
+		4EC54BE32B9709BF003EA856 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		4EC54BE62B972B22003EA856 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		4ECCCB1B2B9EE76000912BCA /* PromoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCardView.swift; sourceTree = "<group>"; };
+		4ED1B0872BA0708E0047BE43 /* AccountSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsView.swift; sourceTree = "<group>"; };
+		4ED1B08A2BA095BB0047BE43 /* HelpSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpSupportView.swift; sourceTree = "<group>"; };
+		4ED1B08C2BA0A95A0047BE43 /* ProfileButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButtonView.swift; sourceTree = "<group>"; };
+		4ED1B08E2BA0CC300047BE43 /* UrgentCareOnlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgentCareOnlineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +58,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E7E4DF02B9F4EBF0042625E /* MessageList */ = {
+			isa = PBXGroup;
+			children = (
+				4E7E4DF42B9F4FA90042625E /* MessageListView.swift */,
+				4E7E4DF32B9F4F8B0042625E /* MessageDetails */,
+			);
+			path = MessageList;
+			sourceTree = "<group>";
+		};
+		4E7E4DF32B9F4F8B0042625E /* MessageDetails */ = {
+			isa = PBXGroup;
+			children = (
+				4E7E4DF12B9F4ED10042625E /* MessageDetailView.swift */,
+			);
+			path = MessageDetails;
+			sourceTree = "<group>";
+		};
 		4EC54BBF2B96FF05003EA856 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +96,13 @@
 			children = (
 				4EC54BCB2B96FF05003EA856 /* DemoNHSAppApp.swift */,
 				4EC54BCD2B96FF05003EA856 /* ContentView.swift */,
+				4EC54BD92B970866003EA856 /* Home */,
+				4EC54BDA2B970870003EA856 /* Services */,
+				4EC54BDB2B970886003EA856 /* Your Health */,
+				4EC54BDC2B970897003EA856 /* Messages */,
+				4ED1B0862BA0703B0047BE43 /* Account & Settings */,
+				4ED1B0892BA095760047BE43 /* Help & Support */,
+				4EC54BE52B970A45003EA856 /* Components */,
 				4EC54BCF2B96FF08003EA856 /* Assets.xcassets */,
 				4EC54BD12B96FF08003EA856 /* Preview Content */,
 			);
@@ -65,6 +115,67 @@
 				4EC54BD22B96FF08003EA856 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4EC54BD92B970866003EA856 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4EC54BDD2B970977003EA856 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4EC54BDA2B970870003EA856 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4EC54BDF2B9709A0003EA856 /* ServicesView.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4EC54BDB2B970886003EA856 /* Your Health */ = {
+			isa = PBXGroup;
+			children = (
+				4EC54BE12B9709B3003EA856 /* YourHealthView.swift */,
+			);
+			path = "Your Health";
+			sourceTree = "<group>";
+		};
+		4EC54BDC2B970897003EA856 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				4EC54BE32B9709BF003EA856 /* MessagesView.swift */,
+				4E7E4DF02B9F4EBF0042625E /* MessageList */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		4EC54BE52B970A45003EA856 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4EC54BE62B972B22003EA856 /* CardView.swift */,
+				4ECCCB1B2B9EE76000912BCA /* PromoCardView.swift */,
+				4E7E4DEE2B9F46470042625E /* ProfileCardView.swift */,
+				4ED1B08C2BA0A95A0047BE43 /* ProfileButtonView.swift */,
+				4ED1B08E2BA0CC300047BE43 /* UrgentCareOnlineView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4ED1B0862BA0703B0047BE43 /* Account & Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4ED1B0872BA0708E0047BE43 /* AccountSettingsView.swift */,
+			);
+			path = "Account & Settings";
+			sourceTree = "<group>";
+		};
+		4ED1B0892BA095760047BE43 /* Help & Support */ = {
+			isa = PBXGroup;
+			children = (
+				4ED1B08A2BA095BB0047BE43 /* HelpSupportView.swift */,
+			);
+			path = "Help & Support";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +248,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ECCCB1C2B9EE76000912BCA /* PromoCardView.swift in Sources */,
+				4ED1B0882BA0708E0047BE43 /* AccountSettingsView.swift in Sources */,
+				4EC54BE72B972B22003EA856 /* CardView.swift in Sources */,
+				4EC54BE22B9709B3003EA856 /* YourHealthView.swift in Sources */,
+				4ED1B08B2BA095BB0047BE43 /* HelpSupportView.swift in Sources */,
+				4EC54BE02B9709A0003EA856 /* ServicesView.swift in Sources */,
+				4E7E4DEF2B9F46470042625E /* ProfileCardView.swift in Sources */,
+				4EC54BE42B9709BF003EA856 /* MessagesView.swift in Sources */,
+				4ED1B08D2BA0A95A0047BE43 /* ProfileButtonView.swift in Sources */,
+				4EC54BDE2B970977003EA856 /* HomeView.swift in Sources */,
+				4E7E4DF52B9F4FA90042625E /* MessageListView.swift in Sources */,
 				4EC54BCE2B96FF05003EA856 /* ContentView.swift in Sources */,
 				4EC54BCC2B96FF05003EA856 /* DemoNHSAppApp.swift in Sources */,
+				4E7E4DF22B9F4ED10042625E /* MessageDetailView.swift in Sources */,
+				4ED1B08F2BA0CC300047BE43 /* UrgentCareOnlineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
