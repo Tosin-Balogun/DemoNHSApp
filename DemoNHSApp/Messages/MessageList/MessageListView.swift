@@ -27,7 +27,7 @@ struct MessageListView: View {
                         }
                         //.padding(.bottom, 8.0)
                         .padding(.top)
-                        .listRowBackground(Color("nhsGrey5"))
+                        .listRowBackground(Color("nhsGrey5").opacity(0.0))
                         
                         Section {
                             NavigationLink(destination: {

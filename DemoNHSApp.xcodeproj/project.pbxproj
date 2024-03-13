@@ -20,6 +20,8 @@
 		4EC54BE42B9709BF003EA856 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC54BE32B9709BF003EA856 /* MessagesView.swift */; };
 		4EC54BE72B972B22003EA856 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC54BE62B972B22003EA856 /* CardView.swift */; };
 		4ECCCB1C2B9EE76000912BCA /* PromoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECCCB1B2B9EE76000912BCA /* PromoCardView.swift */; };
+		4ED032D12BA1B1B0000562D5 /* UrgentCareWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED032D02BA1B1B0000562D5 /* UrgentCareWebView.swift */; };
+		4ED032D32BA1E0B3000562D5 /* AccessServicesPromoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED032D22BA1E0B3000562D5 /* AccessServicesPromoView.swift */; };
 		4ED1B0882BA0708E0047BE43 /* AccountSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED1B0872BA0708E0047BE43 /* AccountSettingsView.swift */; };
 		4ED1B08B2BA095BB0047BE43 /* HelpSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED1B08A2BA095BB0047BE43 /* HelpSupportView.swift */; };
 		4ED1B08D2BA0A95A0047BE43 /* ProfileButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED1B08C2BA0A95A0047BE43 /* ProfileButtonView.swift */; };
@@ -41,6 +43,8 @@
 		4EC54BE32B9709BF003EA856 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		4EC54BE62B972B22003EA856 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		4ECCCB1B2B9EE76000912BCA /* PromoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCardView.swift; sourceTree = "<group>"; };
+		4ED032D02BA1B1B0000562D5 /* UrgentCareWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgentCareWebView.swift; sourceTree = "<group>"; };
+		4ED032D22BA1E0B3000562D5 /* AccessServicesPromoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessServicesPromoView.swift; sourceTree = "<group>"; };
 		4ED1B0872BA0708E0047BE43 /* AccountSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsView.swift; sourceTree = "<group>"; };
 		4ED1B08A2BA095BB0047BE43 /* HelpSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpSupportView.swift; sourceTree = "<group>"; };
 		4ED1B08C2BA0A95A0047BE43 /* ProfileButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButtonView.swift; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 				4E7E4DEE2B9F46470042625E /* ProfileCardView.swift */,
 				4ED1B08C2BA0A95A0047BE43 /* ProfileButtonView.swift */,
 				4ED1B08E2BA0CC300047BE43 /* UrgentCareOnlineView.swift */,
+				4ED032D02BA1B1B0000562D5 /* UrgentCareWebView.swift */,
+				4ED032D22BA1E0B3000562D5 /* AccessServicesPromoView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -253,12 +259,14 @@
 				4EC54BE72B972B22003EA856 /* CardView.swift in Sources */,
 				4EC54BE22B9709B3003EA856 /* YourHealthView.swift in Sources */,
 				4ED1B08B2BA095BB0047BE43 /* HelpSupportView.swift in Sources */,
+				4ED032D32BA1E0B3000562D5 /* AccessServicesPromoView.swift in Sources */,
 				4EC54BE02B9709A0003EA856 /* ServicesView.swift in Sources */,
 				4E7E4DEF2B9F46470042625E /* ProfileCardView.swift in Sources */,
 				4EC54BE42B9709BF003EA856 /* MessagesView.swift in Sources */,
 				4ED1B08D2BA0A95A0047BE43 /* ProfileButtonView.swift in Sources */,
 				4EC54BDE2B970977003EA856 /* HomeView.swift in Sources */,
 				4E7E4DF52B9F4FA90042625E /* MessageListView.swift in Sources */,
+				4ED032D12BA1B1B0000562D5 /* UrgentCareWebView.swift in Sources */,
 				4EC54BCE2B96FF05003EA856 /* ContentView.swift in Sources */,
 				4EC54BCC2B96FF05003EA856 /* DemoNHSAppApp.swift in Sources */,
 				4E7E4DF22B9F4ED10042625E /* MessageDetailView.swift in Sources */,

@@ -27,7 +27,7 @@ struct YourHealthView: View {
                         }
                         //.padding(.bottom, 8.0)
                         .padding(.top)
-                        .listRowBackground(Color("nhsGrey5"))
+                        .listRowBackground(Color("nhsGrey5").opacity(0.0))
                         
                         Section {
                             NavigationLink(destination: {
@@ -37,13 +37,18 @@ struct YourHealthView: View {
                                 
                             })
                             Text("View and manage prescriptions")
-                            Text("Upcoming and past appointments")
+                            NavigationLink(destination: {
+                                Text("Upcoming and past appointments")
+                            }, label: {
+                                Text("Upcoming and past appointments")
+                                    .badge(2)
+                                
+                            })
                             Text("Test results and imaging")
                             Text("COVID-19 vaccine record")
                             Text("NHS COVID Pass")
                             Text("Your health choices")
                             Text("Care plans")
-                                .badge(/*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                         }
                         .padding(.vertical)
 

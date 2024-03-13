@@ -21,14 +21,8 @@ struct UrgentCareOnlineView: View {
             
         }
         .sheet(isPresented: $isPresentWebView, content: {
-            NavigationStack {
-                            // 3
-                            WebView(url: URL(string: "https://111.nhs.uk/")!)
-
-                                .ignoresSafeArea()
-                                .navigationTitle("111 online")
-                                .navigationBarTitleDisplayMode(.inline)
-                        }
+            UrgentCareWebView()
+            
         })
     }
 }
@@ -37,22 +31,3 @@ struct UrgentCareOnlineView: View {
     UrgentCareOnlineView()
 }
 
-
-struct WebView: UIViewRepresentable {
-    // 1
-    let url: URL
-
-    
-    // 2
-    func makeUIView(context: Context) -> WKWebView {
-
-        return WKWebView()
-    }
-    
-    // 3
-    func updateUIView(_ webView: WKWebView, context: Context) {
-
-        let request = URLRequest(url: url)
-        webView.load(request)
-    }
-}
