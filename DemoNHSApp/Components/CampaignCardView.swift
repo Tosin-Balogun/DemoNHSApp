@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PromoCardView: View {
+struct CampaignCardView: View {
     var body: some View {
         
 //        VStack(alignment: .leading, spacing: 32.0) {
@@ -34,16 +34,16 @@ struct PromoCardView: View {
 //        .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
         
         VStack(alignment: .leading) {
-            Image("Clinical-trial")
+            Image("campaign-image-3")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 
             VStack (alignment: .leading) {
-                Text("Health research changes lives")
+                Text("Help change the NHS")
                     .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
                     .fontWeight(.semibold)
                     .foregroundColor(Color.white)
-                Text("Register with Be Part of Research to find and join studies")
+                Text("Have your say on making the NHS fit for the future")
                     .foregroundColor(Color.white)
                     
             }
@@ -53,6 +53,8 @@ struct PromoCardView: View {
         }
         .background(Color.nhsDarkBlue)
         .clipShape(RoundedRectangle(cornerRadius: 16))
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("Help change the future of the NHS by taking part in our survey")
         //.shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
 
     }
