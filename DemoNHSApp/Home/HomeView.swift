@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
     
+    let tip = FeatureTip()
+    
     var body: some View {
         
         NavigationStack {
@@ -20,7 +22,10 @@ struct HomeView: View {
                     
                     List {
                         
-                        ProfileCardView()
+                        ProfileCardViewB()
+                            .padding(.top, -32.0)
+                            .padding(.horizontal, -16)
+                            .listRowBackground(Color("nhsGrey5").opacity(0.0))
                         
                         Section("Services") {
                             NavigationLink(destination: {
@@ -35,15 +40,21 @@ struct HomeView: View {
                         
                         
                         Section("Your health") {
-                            CardView(cardTitle: "GP health record")
+                            Text("GP health record")
                             Text("View and manage prescriptions")
-                            Text("Upcoming and past appointments")
+                            NavigationLink(destination: {
+                                UpcomingAndPastAppointmentsView()
+                            }, label: {
+                                Text("Upcoming and past appointments")
+                                
+                            })
                         }
                         .padding(.vertical)
                         
                         Section("Messages") {
                             HStack {
                                 Image(systemName:"envelope.open")
+                                    .accessibilityElement(children: .ignore)
                                 Text("View your messages")
                                     .badge(2)
                                 
@@ -64,7 +75,7 @@ struct HomeView: View {
                         
                         //Promo card here
                         Section {
-                            PromoCardView()
+                            CampaignCardView()
                                 .listRowBackground(Color("nhsGrey5").opacity(0.0))
                         } header: {
                             HStack {
@@ -88,6 +99,7 @@ struct HomeView: View {
                             .padding(.leading, -8.0)
                         }
                         .foregroundStyle(.nhsBlue)
+                        .popoverTip(tip, arrowEdge: .bottom)
                         .listRowBackground(Color("nhsGrey5").opacity(0.0))
                         
                     }

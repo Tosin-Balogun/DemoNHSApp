@@ -80,6 +80,11 @@ struct MessageDetailView: View {
             }
             .navigationTitle("Portland Street Great Westwood Surgery")
             .navigationBarTitleDisplayMode(/*@START_MENU_TOKEN@*/.inline/*@END_MENU_TOKEN@*/)
+            .toolbar{
+                ToolbarItemGroup(placement: .automatic) {
+                    ProfileButtonView()
+                }
+            }
             
  
         }

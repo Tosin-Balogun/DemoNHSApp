@@ -67,6 +67,11 @@ struct ServicesView: View {
                 //VStack housing the list stops here
             }
             .navigationTitle("Services")
+            .toolbar{
+                ToolbarItemGroup(placement: .automatic) {
+                    ProfileButtonView()
+                }
+            }
  
         }
     }

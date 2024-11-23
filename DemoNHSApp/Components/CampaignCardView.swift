@@ -62,5 +62,5 @@ struct CampaignCardView: View {
 }
 
 #Preview {
-    PromoCardView()
+    CampaignCardView()
 }

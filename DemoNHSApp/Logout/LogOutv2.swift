@@ -1,5 +1,5 @@
 //
-//  LogOutB.swift
+//  LogOutv2.swift
 //  DemoNHSApp
 //
 //  Created by Tosin Balogun on 17/09/2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LogOutB: View {
+struct LogOutv2: View {
     var body: some View {
         NavigationStack {
             ZStack {
@@ -22,14 +22,16 @@ struct LogOutB: View {
                             .fontWeight(.semibold)
                             .foregroundColor(Color.white)
                         
-                        Text("You can now close the app or log back in again")
+                        Text("You can now close the app or log in again.")
                             .font(.body)
                             .fontWeight(.regular)
                             .foregroundColor(Color.white)
                         
                     }
                     .padding(.horizontal, 16)
-                    .padding(.bottom, 24.0)
+                    .padding(.bottom, 16.0)
+                    
+//                    Spacer()
                     
                     Button(action: {}, label: {
                         Text("Log back in")
@@ -57,5 +59,5 @@ struct LogOutB: View {
 }
 
 #Preview {
-    LogOutB()
+    LogOutv2()
 }

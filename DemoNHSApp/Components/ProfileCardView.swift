@@ -25,6 +25,7 @@ struct ProfileCardView: View {
                             .stroke(.white, lineWidth: 4)
                     }
                     .shadow(radius: 4)
+                
 
                 VStack(alignment: .leading) {
                     Text("Good morning, ").font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/).fontWeight(.semibold)

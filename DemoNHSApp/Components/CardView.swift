@@ -18,6 +18,7 @@ struct CardView: View {
                 .fontWeight(.semibold)
             Spacer()
             Image(systemName: "chevron.right")
+                .accessibilityHidden(true)
         }
         .foregroundStyle(Color("nhsBlue"))
         //.padding()

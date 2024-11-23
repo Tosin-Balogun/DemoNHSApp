@@ -94,6 +94,11 @@ struct MessagesView: View {
                 //VStack housing the list stops here
             }
             .navigationTitle("Messages")
+            .toolbar{
+                ToolbarItemGroup(placement: .automatic) {
+                    ProfileButtonView()
+                }
+            }
  
         }
     }

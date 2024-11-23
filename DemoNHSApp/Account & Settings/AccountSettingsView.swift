@@ -12,6 +12,7 @@ struct AccountSettingsView: View {
     @State private var showLogOut = false
     
     var body: some View {
+        
         NavigationStack {
             ZStack {
                 Color("nhsGrey5").ignoresSafeArea()
@@ -50,12 +51,21 @@ struct AccountSettingsView: View {
                             } label: {
                                 Text("Log out")
                             }
-                            .confirmationDialog("Are you sure?", isPresented: $showLogOut, titleVisibility: .visible) {
+                            .listRowBackground(Color("nhsGrey5").opacity(0.0))
+                            .fontWeight(.bold)
+                            .frame(height: 58.0)
+                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                            .foregroundStyle(.white)
+                            .background(.nhsGrey)
+                            .font(.body)
+                            .cornerRadius(8)
+                            .shadow(color: Color.black, radius: 0, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 4)
+                            .confirmationDialog("Are you sure you want to log out?", isPresented: $showLogOut, titleVisibility: .visible) {
                                 Button(role: .destructive, action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                                    Text("Log Out")
+                                    Text("Log out")
                                 })
-                            } message: {
-                                Text("All progress will be reset once you logout")
+//                            } message: {
+//                                Text("All progress will be reset once you log out")
                             }
 
 

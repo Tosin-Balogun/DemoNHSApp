@@ -29,6 +29,7 @@ struct MessageListView: View {
                         .padding(.top)
                         .listRowBackground(Color("nhsGrey5").opacity(0.0))
                         
+                        
                         Section {
                             NavigationLink(destination: {
                                 MessageDetailView()
@@ -90,7 +91,7 @@ struct MessageListView: View {
                                     .lineLimit(3)
                             }
                                 
-                        }
+                        } header:{Filter()}
                         .padding(.vertical)
 
                         
@@ -101,6 +102,11 @@ struct MessageListView: View {
                 //VStack housing the list stops here
             }
             .navigationTitle("Your messages")
+            .toolbar{
+                ToolbarItemGroup(placement: .automatic) {
+                    ProfileButtonView()
+                }
+            }
  
         }
     }

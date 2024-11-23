@@ -38,7 +38,7 @@ struct YourHealthView: View {
                             })
                             Text("View and manage prescriptions")
                             NavigationLink(destination: {
-                                Text("Upcoming and past appointments")
+                                UpcomingAndPastAppointmentsView()
                             }, label: {
                                 Text("Upcoming and past appointments")
                                     .badge(2)
@@ -60,6 +60,11 @@ struct YourHealthView: View {
                 //VStack housing the list stops here
             }
             .navigationTitle("Your health")
+            .toolbar{
+                ToolbarItemGroup(placement: .automatic) {
+                    ProfileButtonView()
+                }
+            }
  
         }
     }

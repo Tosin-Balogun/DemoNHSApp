@@ -1,5 +1,5 @@
 //
-//  LogOutC.swift
+//  LogOutv3.swift
 //  DemoNHSApp
 //
 //  Created by Tosin Balogun on 17/09/2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LogOutC: View {
+struct LogOutv3: View {
     var body: some View {
         NavigationStack {
             ZStack {
@@ -17,21 +17,21 @@ struct LogOutC: View {
                     Spacer()
                     
                     VStack(alignment: .leading, spacing: 8.0) {
-                        //Text("You have logged out")
+
                         Text("You have successfully logged out")
                             .font(.title)
                             .fontWeight(.semibold)
                             .foregroundColor(Color.white)
                         
-                        //Text("You can now close the app or log back in again")
-                        Text("You can now close the NHS app or log back in again to access your NHS services")
+
+                        Text("You can now close the NHS App or log in again to access your NHS services.")
                             .font(.body)
                             .fontWeight(.regular)
                             .foregroundColor(Color.white)
                         
                     }
                     .padding(.horizontal, 16)
-                    .padding(.bottom, 24.0)
+                    .padding(.bottom, 16.0)
                     
                     Button(action: {}, label: {
                         Text("Log back in")
@@ -51,13 +51,21 @@ struct LogOutC: View {
                 }
                 
             }
-            //            .navigationTitle("Logged out")
-            //            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("Logged out")
+                        .font(.title3)
+                        .fontWeight(.medium)
+                        .foregroundColor(.white)
+                        }
+                    }
+
             
         }
     }
 }
 
 #Preview {
-    LogOutC()
+    LogOutv3()
 }

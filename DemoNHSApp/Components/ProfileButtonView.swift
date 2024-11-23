@@ -19,24 +19,24 @@ struct ProfileButtonView: View {
                 showHelp.toggle()
             }, label: {
                 Image(systemName: "questionmark.circle")
-                    .resizable()
-                    .frame(width: 34, height: 34)
-                    .aspectRatio(contentMode: .fit)
+//                    .resizable()
+//                    .frame(width: 34, height: 34)
+//                    .aspectRatio(contentMode: .fit)
             })
             Button(action: {
                 showProfile.toggle()
             }, label: {
                 Image(systemName: "person.circle")
-                    .resizable()
-                    .frame(width: 34, height: 34)
-                    .aspectRatio(contentMode: .fit)
+//                    .resizable()
+//                    .frame(width: 34, height: 34)
+//                    .aspectRatio(contentMode: .fit)
             })
             
         }
         .foregroundStyle(.nhsGrey)
         .sheet(isPresented: $showProfile, content: {
             AccountSettingsView()
-                //.presentationDetents([.medium, .large])
+//                .presentationDetents([ .medium, .large])
         })
         .sheet(isPresented: $showHelp, content: {
             HelpSupportView()

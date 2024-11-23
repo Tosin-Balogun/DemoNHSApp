@@ -8,38 +8,55 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var tabSelection = 0
+//    let tip = FeatureTip()
+    
     var body: some View {
 
-        TabView {
-            HomeView()
-                .tabItem { Label(
-                    title: { Text("Home") },
-                    icon: { Image(systemName: "house") }
+        TabView(selection: $tabSelection) {
+            
+            Group {
+                HomeView()
+                    .tabItem { Label(
+                        title: { Text("Home") },
+                        icon: { Image(systemName: "house") }
                 ) }
- 
+                    .tag(0)
                 
-            ServicesView()
-                .tabItem { Label(
-                    title: { Text("Services") },
-                    icon: { Image(systemName: "cross") }
-                ) }
-  
-            YourHealthView()
-                .tabItem { Label(
-                    title: { Text("Your health") },
-                    icon: { Image(systemName: "heart") }
-                ) }
-
-            MessagesView()
-                .badge(2)
-                .tabItem { Label(
-                    title: { Text("Messages") },
-                    icon: { Image(systemName: "envelope.open") }
-                ) }
+                ServicesView()
+                    .tabItem { Label(
+                        title: { Text("Services") },
+                        icon: { Image(systemName: "cross") }
+                    ) }
+                    .tag(1)
+                
+                
+                
+                YourHealthView()
+                    .tabItem { Label(
+                        title: { Text("Your health") },
+                        icon: { Image(systemName: "heart") }
+                    ) }
+                    .tag(2)
+                
+                MessagesView()
+                    .badge("2")
+                    .tabItem { Label(
+                        title: { Text("Messages") },
+                        icon: { Image(systemName: "envelope.open") }
+                    ) }
+                    .tag(3)
+            }
+            .toolbarBackground(.nhsBlue, for: .tabBar)
+            .toolbarBackground(.visible, for: .tabBar)
+            .toolbarColorScheme(.dark, for: .tabBar)
+ 
 
         }
-        .toolbarBackground(.orange, for: .tabBar)
-        //.tabViewStyle(.page(indexDisplayMode: .always))
+        .sensoryFeedback(.impact, trigger: tabSelection)
+//        .popoverTip(tip, arrowEdge: .bottom)
+//        .tabViewStyle(.page(indexDisplayMode: .always))
     }
 }
 
