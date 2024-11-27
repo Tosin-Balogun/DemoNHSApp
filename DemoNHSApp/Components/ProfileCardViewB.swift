@@ -14,33 +14,28 @@ struct ProfileCardViewB: View {
     var body: some View {
         
         VStack(alignment: .leading) {
-            VStack(alignment: .leading, spacing: 16.0) {
+            VStack(alignment: .leading, spacing: 8.0) {
                 
                 Image("NHS-logo-2")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 94.0, height: 94.0)
-
+                    .frame(width: 76.0, height: 32.0)
 
                 VStack(alignment: .leading) {
-                    Text("Good morning, ").font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/).fontWeight(.semibold)
-                    Text("Mary Swanson").font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/).fontWeight(.bold)
+                    Text("Good morning, ").font(.largeTitle).fontWeight(.bold)
+                    Text("Shivaya Patel-Jones").font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/).fontWeight(.bold)
                 }
-                
                 
                 Button(action: {showProfile.toggle()}, label: {
                     HStack {
                         Text("NHS number:")
-                            .foregroundColor(Color("nhsGrey"))
-                        
                         Text("123 456 7890")
-                            .fontWeight(.bold)
                             .foregroundColor(Color("nhsBlue"))
                     }
-                }).padding(.vertical)
+                })
+                .padding(.top, 4.0)
+                .font(.system(size: 17, weight: .medium))
             }
-            //.padding(.vertical, 32.0)
-            
 
             
         }
