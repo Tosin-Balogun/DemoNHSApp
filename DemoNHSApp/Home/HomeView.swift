@@ -27,29 +27,40 @@ struct HomeView: View {
                             .padding(.horizontal, -16)
                             .listRowBackground(Color("nhsGrey5").opacity(0.0))
                         
-                        Section("Services") {
-                            NavigationLink(destination: {
-                                Text("Prescriptions")
-                            }, label: {
-                                Text("Request repeat prescriptions")
-                                
-                            })
-                            Text("Check if you need urgent medical help using 111 online")
+                        Section(
+                            header:Text("Services")
+                                .font(.system(size: 24, weight: .bold))
+                                .foregroundColor(.black)
+                                .textCase(nil)){
+                            NavigationLink(
+                                destination: {Text("Prescriptions")},
+                                label: {Text("Request repeat prescriptions")}
+                            )
+                            .padding(.vertical)
+                            .foregroundColor(Color("nhsBlue"))
+                            NavigationLink(
+                                destination: {Text("111 online")},
+                                label: {Text("Check if you need urgent medical help using 111 online")}
+                            )
+                            .padding(.vertical)
+                            .foregroundColor(Color("nhsBlue"))
                         }
-                        .padding(.vertical)
                         
                         
-                        Section("Your health") {
+                        Section(
+                            header:Text("Your health")
+                                .font(.system(size: 24, weight: .bold))
+                                .foregroundColor(.black)
+                                .textCase(nil)){
                             Text("GP health record")
                             Text("View and manage prescriptions")
                             NavigationLink(destination: {
                                 UpcomingAndPastAppointmentsView()
                             }, label: {
                                 Text("Upcoming and past appointments")
-                                
                             })
                         }
-                        .padding(.vertical)
+                        
                         
                         Section("Messages") {
                             HStack {
@@ -57,7 +68,6 @@ struct HomeView: View {
                                     .accessibilityElement(children: .ignore)
                                 Text("View your messages")
                                     .badge(2)
-                                
                             }
                             .padding(.vertical)
                             
@@ -106,7 +116,6 @@ struct HomeView: View {
                     .padding(-8.0)
                     
                     
-                    
                 }
                 //.padding(16.0) END of VStack that holds the list view
             }
@@ -118,11 +127,8 @@ struct HomeView: View {
                 }
             }
         }
-        
     }
 }
-    
-    
 
 
 #Preview {
