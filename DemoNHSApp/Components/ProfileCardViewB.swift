@@ -34,7 +34,7 @@ struct ProfileCardViewB: View {
                     }
                 })
                 .padding(.top, 4.0)
-                .font(.system(size: 17, weight: .medium))
+                .fontWeight(.medium)
             }
 
             

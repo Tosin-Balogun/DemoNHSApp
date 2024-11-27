@@ -31,20 +31,20 @@ struct HomeView: View {
                             header:Text("Services")
                                 .font(.system(size: 24, weight: .bold))
                                 .foregroundColor(.black)
-                                .padding(.vertical, -4.0) // compensate for list row padding
+                                .padding(.leading, -16.0) // remove the left-side inset
+                                .padding(.vertical, -6.0) // compensate for list row padding
                                 .textCase(nil)){
                             NavigationLink(
                                 destination: {Text("Prescriptions")},
                                 label: {Text("Request repeat prescriptions")}
-                            )
+                            ).fontWeight(.medium)
                             NavigationLink(
                                 destination: {Text("111 online")},
                                 label: {Text("Check if you need urgent medical help using 111 online")}
-                            )
+                            ).fontWeight(.medium)
                         }
 //                        .headerProminence(.increased)
                         .padding(.vertical, 10.0)
-                        .font(.system(size: 17, weight: .medium))
                         .foregroundColor(Color("nhsBlue"))
 
 
@@ -53,25 +53,24 @@ struct HomeView: View {
                             header:Text("Your health")
                                 .font(.system(size: 24, weight: .bold))
                                 .foregroundColor(.black)
-                                .padding(.vertical, -4.0) // compensate for list row padding
+                                .padding(.leading, -16.0) // remove the left-side inset
+                                .padding(.vertical, -6.0) // compensate for list row padding
                                 .textCase(nil)){
-                                    
                             NavigationLink(
                                 destination: {Text("GP health record")},
                                 label: {Text("GP health record")}
-                            )
+                            ).fontWeight(.medium)
                             NavigationLink(
                                 destination: {Text("View and manage prescriptions")},
                                 label: {Text("View and manage prescriptions")}
-                            )
+                            ).fontWeight(.medium)
                             NavigationLink(destination: {
                                 UpcomingAndPastAppointmentsView()
                             }, label: {
                                 Text("Upcoming and past appointments")
-                            })
+                            }).fontWeight(.medium)
                         }
                         .padding(.vertical, 10.0)
-                        .font(.system(size: 17, weight: .medium))
                         .foregroundColor(Color("nhsBlue"))
 
                         
@@ -80,26 +79,35 @@ struct HomeView: View {
                             header:Text("Messages")
                                 .font(.system(size: 24, weight: .bold))
                                 .foregroundColor(.black)
-                                .padding(.vertical, -4.0) // compensate for list row padding
+                                .padding(.leading, -16.0) // remove the left-side inset
+                                .padding(.vertical, -6.0) // compensate for list row padding
                                 .textCase(nil)){
                             HStack {
                                 Image(systemName:"envelope.open")
                                     .accessibilityElement(children: .ignore)
-                                Text("View your messages")
+                                Text("View your messages").fontWeight(.medium)
                                     .badge(2)
                             }
                         }
                         .padding(.vertical, 10.0)
+                        .foregroundColor(Color("nhsBlue"))
 
                         
-                        Section("Manage services for another person") {
+                        Section(
+                            header:Text("Manage services for another person")
+                                .font(.system(size: 24, weight: .bold))
+                                .foregroundColor(.black)
+                                .padding(.leading, -16.0) // remove the left-side inset
+                                .padding(.vertical, -6.0) // compensate for list row padding
+                                .textCase(nil)){
                             HStack {
                                 Image(systemName:"person.2.circle")
-                                Text("Switch profiles")
+                                Text("Switch profiles").fontWeight(.medium)
                             }
                         }
-                        .padding(.vertical)
-                        
+                        .padding(.vertical, 10.0)
+                        .foregroundColor(Color("nhsBlue"))
+
                         
                         
                         //Promo card here
