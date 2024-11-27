@@ -37,7 +37,7 @@ struct SampleView: View {
         VStack {
             // Add `.popoverTip` to the view you want to modify.
             // Tips.configure(options:) must be called before your tip will be eligible for display.
-            Image(systemName: "star")
+            Image(systemName: "cross.fill")
                 .popoverTip(tip, arrowEdge: .bottom)
         }
     }
