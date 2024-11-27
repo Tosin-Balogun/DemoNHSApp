@@ -101,6 +101,7 @@ struct HomeView: View {
                         .foregroundStyle(.nhsBlue)
                         .popoverTip(tip, arrowEdge: .bottom)
                         .listRowBackground(Color("nhsGrey5").opacity(0.0))
+                        // Popover on last item
                         
                     }
                     .padding(-8.0)

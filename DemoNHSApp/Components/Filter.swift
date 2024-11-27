@@ -31,7 +31,7 @@ struct Filter: View {
         }
         .foregroundStyle(.nhsGrey)
         .sheet(isPresented: $showFilter, content: {
-            Text("Filter by will appear here with controls")
+            Text("Filter by will appear here with controls and dismiss action")
 //                .presentationDetents([ .medium, .large])
         })
 
