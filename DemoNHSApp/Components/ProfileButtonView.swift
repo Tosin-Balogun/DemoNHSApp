@@ -19,6 +19,7 @@ struct ProfileButtonView: View {
                 showHelp.toggle()
             }, label: {
                 Image(systemName: "questionmark.circle")
+                    .accessibilityLabel("Get help")
 //                    .resizable()
 //                    .frame(width: 34, height: 34)
 //                    .aspectRatio(contentMode: .fit)
@@ -27,6 +28,7 @@ struct ProfileButtonView: View {
                 showProfile.toggle()
             }, label: {
                 Image(systemName: "person.circle")
+                    .accessibilityLabel("Account")
 //                    .resizable()
 //                    .frame(width: 34, height: 34)
 //                    .aspectRatio(contentMode: .fit)

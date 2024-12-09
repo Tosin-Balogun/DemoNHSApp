@@ -17,9 +17,7 @@ struct Filter: View {
             Button(action: {
                 showFilter.toggle()
             }, label: {
-                Image(systemName: "line.3.horizontal.decrease")
-                    .foregroundColor(Color("nhsBlue"))
-                Text("Filter")
+                Label("Filter", systemImage: "line.3.horizontal.decrease")
                     .fontWeight(.semibold)
                     .foregroundStyle(.nhsBlue)
 //                    .resizable()
