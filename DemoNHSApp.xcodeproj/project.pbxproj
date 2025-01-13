@@ -12,6 +12,7 @@
 		4E3AB8D32C99A524001F6167 /* LogOutv3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3AB8D22C99A524001F6167 /* LogOutv3.swift */; };
 		4E3AB8D52C99A6A1001F6167 /* LogOutv1.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3AB8D42C99A6A1001F6167 /* LogOutv1.1.swift */; };
 		4E3AB8D72C99AC01001F6167 /* LogOutv3.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3AB8D62C99AC01001F6167 /* LogOutv3.1.swift */; };
+		4E5443992D06FDC0009B3BAB /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5443982D06FDBB009B3BAB /* Carousel.swift */; };
 		4E6B41562BCFC0820095808E /* ProfileCardViewB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B41552BCFC0820095808E /* ProfileCardViewB.swift */; };
 		4E7E4DEF2B9F46470042625E /* ProfileCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E4DEE2B9F46470042625E /* ProfileCardView.swift */; };
 		4E7E4DF22B9F4ED10042625E /* MessageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E4DF12B9F4ED10042625E /* MessageDetailView.swift */; };
@@ -44,6 +45,7 @@
 		4E3AB8D22C99A524001F6167 /* LogOutv3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutv3.swift; sourceTree = "<group>"; };
 		4E3AB8D42C99A6A1001F6167 /* LogOutv1.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutv1.1.swift; sourceTree = "<group>"; };
 		4E3AB8D62C99AC01001F6167 /* LogOutv3.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutv3.1.swift; sourceTree = "<group>"; };
+		4E5443982D06FDBB009B3BAB /* Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
 		4E662E082C2C39F000C8C559 /* BoardingPass.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = BoardingPass.pkpass; sourceTree = "<group>"; };
 		4E6B41552BCFC0820095808E /* ProfileCardViewB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCardViewB.swift; sourceTree = "<group>"; };
 		4E7E4DEE2B9F46470042625E /* ProfileCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCardView.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				4EC54BE62B972B22003EA856 /* CardView.swift */,
+				4E5443982D06FDBB009B3BAB /* Carousel.swift */,
 				4ECCCB1B2B9EE76000912BCA /* CampaignCardView.swift */,
 				4EAB1FA32CF2116700DF2F9F /* FeatureTip.swift */,
 				4E7E4DEE2B9F46470042625E /* ProfileCardView.swift */,
@@ -329,6 +332,7 @@
 				4ED032D12BA1B1B0000562D5 /* UrgentCareWebView.swift in Sources */,
 				4EC54BCE2B96FF05003EA856 /* ContentView.swift in Sources */,
 				4EC54BCC2B96FF05003EA856 /* DemoNHSAppApp.swift in Sources */,
+				4E5443992D06FDC0009B3BAB /* Carousel.swift in Sources */,
 				4E7E4DF22B9F4ED10042625E /* MessageDetailView.swift in Sources */,
 				4ED1B08F2BA0CC300047BE43 /* UrgentCareOnlineView.swift in Sources */,
 			);

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @AppStorage("showCarousel") var showCarousel = true
     @State private var tabSelection = 0
 //    let tip = FeatureTip()
     
@@ -57,6 +58,10 @@ struct ContentView: View {
         .sensoryFeedback(.impact, trigger: tabSelection)
 //        .popoverTip(tip, arrowEdge: .bottom)
 //        .tabViewStyle(.page(indexDisplayMode: .always))
+        .sheet(isPresented: $showCarousel) {
+            Carousel()
+                .interactiveDismissDisabled()
+        }
     }
 }
 
