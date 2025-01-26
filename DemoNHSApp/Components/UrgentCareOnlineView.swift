@@ -16,8 +16,15 @@ struct UrgentCareOnlineView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Button(action: {isPresentWebView.toggle()}, label: {
-                Text("Check if you need urgent medical help using 111 online")
+                HStack(alignment: .center) {
+                    Text("Check if you need urgent medical help using 111 online")
+                    Spacer()
+                    Image(systemName:"arrow.up.right")
+                        .foregroundColor(Color.gray)
+                        .accessibilityElement(children: .ignore)
+                }
             })
+            .buttonStyle(.plain)
             
         }
         .sheet(isPresented: $isPresentWebView, content: {

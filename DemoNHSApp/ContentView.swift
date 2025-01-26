@@ -45,7 +45,7 @@ struct ContentView: View {
                     .badge("2")
                     .tabItem { Label(
                         title: { Text("Messages") },
-                        icon: { Image(systemName: "envelope.open") }
+                        icon: { Image(systemName: "envelope") }
                     ) }
                     .tag(3)
             }

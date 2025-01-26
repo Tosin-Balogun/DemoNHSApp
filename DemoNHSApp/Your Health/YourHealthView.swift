@@ -23,7 +23,7 @@ struct YourHealthView: View {
                         VStack {
                             Text("View your personal records and choices")
                                 //.foregroundStyle(.gray)
-                                .padding(-16)
+                                .padding(-8)
                         }
                         //.padding(.bottom, 8.0)
                         .padding(.top)
@@ -36,7 +36,11 @@ struct YourHealthView: View {
                                 Text("GP health record")
                                 
                             })
-                            Text("View and manage prescriptions")
+                            NavigationLink(destination: {
+                                ViewandManagePrescriptions()
+                            }, label: {
+                                Text("View and manage prescriptions")
+                            })
                             NavigationLink(destination: {
                                 UpcomingAndPastAppointmentsView()
                             }, label: {

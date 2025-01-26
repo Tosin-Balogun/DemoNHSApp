@@ -23,7 +23,7 @@ struct MessageListView: View {
                         VStack {
                             Text("You have 2 unread messages")
                                 //.foregroundStyle(.gray)
-                                .padding(-16)
+                                .padding(-8)
                         }
                         //.padding(.bottom, 8.0)
                         .padding(.top)
@@ -39,10 +39,10 @@ struct MessageListView: View {
                                     Text("1:02pm")
                                         .foregroundColor(Color("nhsGrey"))
                                     Text("Portland Street Great Westood Surgery")
-                                        .font(.title3)
                                         .fontWeight(.semibold)
-                                        //.foregroundColor(Color("nhsBlue"))
+
                                     Text("Patient survey reminder. The patient feedback survey is about to close. Have your say about Portland Street Great Westood Surgery by providing us with your thoughts")
+                                        .font(.subheadline)
                                         .foregroundColor(Color("nhsGrey"))
                                         .lineLimit(3)
                                 }
@@ -55,10 +55,10 @@ struct MessageListView: View {
                                 Text("Thursday")
                                     .foregroundColor(Color("nhsGrey"))
                                 Text("Range Surgery")
-                                    .font(.title3)
                                     .fontWeight(.semibold)
-                                    //.foregroundColor(Color("nhsBlue"))
+
                                 Text("Dear Mary, we would like to ask you a few questions about smoking.")
+                                    .font(.subheadline)
                                     .foregroundColor(Color("nhsGrey"))
                                     .lineLimit(3)
                             }
@@ -70,10 +70,10 @@ struct MessageListView: View {
                                 Text("4 Oct 2023")
                                     .foregroundColor(Color("nhsGrey"))
                                 Text("Hughenden Valley Surgery")
-                                    .font(.title3)
-                                    //.fontWeight(.semibold)
                                     .foregroundColor(Color("nhsGrey"))
+                                
                                 Text("Reminder of your telephone appointment with your GP on Friday 23 October at 1:30pm.")
+                                    .font(.subheadline)
                                     .foregroundColor(Color("nhsGrey"))
                                     .lineLimit(3)
                             }
@@ -83,15 +83,15 @@ struct MessageListView: View {
                                 Text("18 Sep 2023")
                                     .foregroundColor(Color("nhsGrey"))
                                 Text("NHS APP")
-                                    .font(.title3)
-                                    //.fontWeight(.semibold)
                                     .foregroundColor(Color("nhsGrey"))
+                                
                                 Text("Your next COVID-19 vaccination. I'd like to invite you to get your COVID-19 vaccination this sprint")
+                                    .font(.subheadline)
                                     .foregroundColor(Color("nhsGrey"))
                                     .lineLimit(3)
                             }
                                 
-                        } header:{Filter()}
+                        }
                         .padding(.vertical)
 
                         
@@ -106,6 +106,16 @@ struct MessageListView: View {
                 ToolbarItemGroup(placement: .automatic) {
                     ProfileButtonView()
                 }
+            }
+            .safeAreaInset(edge: .top, alignment: .leading) {
+                
+                HStack() {
+                    Filter()
+                    Spacer()
+                }
+                .padding(.horizontal, 16.0)
+                .padding(.vertical, 8.0)
+                .background{Color.nhsGrey5.opacity(0.5)}
             }
  
         }

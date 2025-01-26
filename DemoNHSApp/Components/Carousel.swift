@@ -22,18 +22,18 @@ struct Carousel: View {
                 TabView(selection: $selectedTab) {
                     
                     VStack(alignment: .leading, spacing: 8.0) {
+                        Spacer()
                         VStack{
                             Image("NHS-logo-2")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .frame(height: 44.0)
+                                .frame(height: 24.0)
                         }
-                        Spacer()
                         //                    Image("App services image")
                         //                        .resizable()
                         //                        .aspectRatio(contentMode: .fit)
                         Text("Welcome to the NHS App")
-                            .font(.title)
+                            .font(.largeTitle)
                             .fontWeight(.semibold)
                         Text("There is a new way of navigating the app. It’s now easier to find the services you need to manage your health. ")
                         Text("Let's get started")
@@ -49,9 +49,10 @@ struct Carousel: View {
                         //                        Image("nhsLogo")
                         //                    }
                         Spacer()
-                        Image("App services image")
+                        Image("App services image 1")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
+                            .padding(.bottom, 8.0)
                         Text("Access services")
                             .font(.title)
                             .fontWeight(.semibold)
@@ -70,9 +71,10 @@ struct Carousel: View {
                         //                        Image("nhsLogo")
                         //                    }
                         Spacer()
-                        Image("App your health image")
+                        Image("App your health image 1")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
+                            .padding(.bottom, 8.0)
                         Text("Manage your health")
                             .font(.title)
                             .fontWeight(.semibold)
@@ -91,9 +93,10 @@ struct Carousel: View {
                         //                        Image("nhsLogo")
                         //                    }
                         Spacer()
-                        Image("App messages image")
+                        Image("App messages image 1")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
+                            .padding(.bottom, 8.0)
                         Text("View your messages")
                             .font(.title)
                             .fontWeight(.semibold)

@@ -10,6 +10,7 @@ import SwiftUI
 struct AccountSettingsView: View {
     
     @State private var showLogOut = false
+    @State private var trigger = false
     
     var body: some View {
         
@@ -27,7 +28,7 @@ struct AccountSettingsView: View {
                         VStack {
                             Text("Change your NHS App settings and personal details")
                                 //.foregroundStyle(.gray)
-                                .padding(.horizontal, -16)
+                                .padding(.horizontal, -8)
                                 .padding(.top, -16)
                         }
                         //.padding(.bottom, 8.0)
@@ -46,29 +47,37 @@ struct AccountSettingsView: View {
                             Text("Manage your notifications")
                             Text("Manage cookies and read legal information")
                             Text("Update your GP surgery on changes to your personal details")
-                            Button {
+                            Button(action: {
                                 showLogOut.toggle()
-                            } label: {
+                                trigger.toggle()
+                            }, label: {
                                 Text("Log out")
-                            }
+                                    .fontWeight(.bold)
+                                    .frame(height: 58.0)
+                                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 8)
+                                            .stroke(Color.nhsBlue, lineWidth: 4)
+                                    )
+                                    .foregroundStyle(.nhsBlue)
+                                    .font(.body)
+                                    .cornerRadius(8)
+//                                        .shadow(color: Color.nhsBlue, radius: 0, x: 0.0, y: 4)
+
+                                
+                            })
+                            .buttonStyle(.borderless)
+                            .padding(.horizontal, -16.0)
+                            .sensoryFeedback(.impact, trigger: trigger)
                             .listRowBackground(Color("nhsGrey5").opacity(0.0))
-                            .fontWeight(.bold)
-                            .frame(height: 58.0)
-                            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                            .foregroundStyle(.white)
-                            .background(.nhsGrey)
-                            .font(.body)
-                            .cornerRadius(8)
-                            .shadow(color: Color.black, radius: 0, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 4)
                             .confirmationDialog("Are you sure you want to log out?", isPresented: $showLogOut, titleVisibility: .visible) {
                                 Button(role: .destructive, action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                                     Text("Log out")
                                 })
 //                            } message: {
 //                                Text("All progress will be reset once you log out")
-                            }
 
-
+                        }
 
                         } footer: {
                             Text("Version: 2.36.6 (2.36.0)")

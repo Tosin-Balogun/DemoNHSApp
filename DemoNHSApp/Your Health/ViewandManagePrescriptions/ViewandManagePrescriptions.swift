@@ -1,13 +1,13 @@
 //
-//  UpcomingAndPastAppointmentsView.swift
+//  ViewandManagePrescriptions.swift
 //  DemoNHSApp
 //
-//  Created by Tosin Balogun on 13/03/2024.
+//  Created by Tosin Balogun on 25/01/2025.
 //
 
 import SwiftUI
 
-struct UpcomingAndPastAppointmentsView: View {
+struct ViewandManagePrescriptions: View {
     
     @State private var trigger = false
     
@@ -17,11 +17,13 @@ struct UpcomingAndPastAppointmentsView: View {
                 Color("nhsGrey5").ignoresSafeArea()
                 
                 VStack(alignment: .leading) {
-
+                    
+                    
+                    
                     List {
                         
                         VStack {
-                            Text("View or manage upcoming and past appointments, referrals and waiting lists")
+                            Text("Check your prescriptions and choose the pharmacy they are collected or delivered from")
                                 //.foregroundStyle(.gray)
                                 .padding(.horizontal, -8)
                                 .padding(.top, -16)
@@ -31,18 +33,50 @@ struct UpcomingAndPastAppointmentsView: View {
                         .listRowBackground(Color("nhsGrey5").opacity(0.0))
                         
                         Section {
-                            Text("GP surgery appointments")
+                            VStack(alignment: .leading, spacing: 8.0) {
+                                Text("Requested medicines")
+                                   
+                                Text ("""
+                                      Check if your GP has arrpoved the medicines you requested in the app
+                                      """)
+                                .font(.subheadline)
+                                .foregroundColor(Color("nhsGrey"))
+                            }
                             
                             NavigationLink(destination: {
-                                Referrals()
+                                CheckReadyPrescriptions()
                             }, label: {
-                                Text("Referrals")
+                                VStack(alignment: .leading, spacing: 8.0) {
+                                    Text("Check if your prescriptions are ready")
+                                       
+                                    Text ("""
+                                          View prescriptions being prepared by pharmacy
+                                          """)
+                                    .font(.subheadline)
+                                    .foregroundColor(Color("nhsGrey"))
+                                }
                                     .badge(1)
                                 
                             })
                             
-                            Text("Hospital appointments")
-                            Text("Waiting lists")
+                            VStack(alignment: .leading, spacing: 8.0) {
+                                Text("Choose a pharmacy")
+                                   
+                                Text ("""
+                                      Choose or change a pharmacy for your prescriptions to be collected or delivered from
+                                      """)
+                                .font(.subheadline)
+                                .foregroundColor(Color("nhsGrey"))
+                            }
+                            VStack(alignment: .leading, spacing: 8.0) {
+                                Text("Hospital and other medicines")
+                                   
+                                Text ("""
+                                      View your current and past medicines
+                                      """)
+                                .font(.subheadline)
+                                .foregroundColor(Color("nhsGrey"))
+                            }
  
                         }
                         .padding(.vertical)
@@ -59,13 +93,13 @@ struct UpcomingAndPastAppointmentsView: View {
                                     .font(.title3)
                                     .fontWeight(.semibold)
                                     .multilineTextAlignment(.center)
-                                Text("Find available GP appointments and other available services")
+                                Text("Request medicines you take often")
                                     .multilineTextAlignment(.center)
                                 
                                 Button(action: {
                                     trigger.toggle()
                                 }, label: {
-                                    Text("Explore services")
+                                    Text("Request medicines")
                                         .fontWeight(.bold)
                                         .frame(height: 58.0)
                                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
@@ -94,7 +128,7 @@ struct UpcomingAndPastAppointmentsView: View {
                 }
                 //VStack housing the list stops here
             }
-            .navigationTitle("Upcoming and past appointments")
+            .navigationTitle("View and manage prescriptions")
             .toolbar{
                 ToolbarItemGroup(placement: .automatic) {
                     ProfileButtonView()
@@ -106,5 +140,5 @@ struct UpcomingAndPastAppointmentsView: View {
 }
 
 #Preview {
-    UpcomingAndPastAppointmentsView()
+    ViewandManagePrescriptions()
 }

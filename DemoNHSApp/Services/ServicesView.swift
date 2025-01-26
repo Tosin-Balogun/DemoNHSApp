@@ -23,7 +23,7 @@ struct ServicesView: View {
                         VStack {
                             Text("Get care and support to help you stay well")
                                 //.foregroundStyle(.gray)
-                                .padding(-16)
+                                .padding(-8)
                         }
                         //.padding(.bottom, 8.0)
                         .padding(.top)
@@ -31,12 +31,11 @@ struct ServicesView: View {
                         
                         Section("Your GP services") {
                             NavigationLink(destination: {
-                                Text("Prescriptions")
+                                RequestMedicines()
                             }, label: {
-                                Text("Request repeat prescriptions")
+                                Text("Request medicines")
                                 
                             })
-                            Text("Contact your GP about a health problem")
                             Text("Contact your GP for a document or update")
                             Text("Check for available GP appointments")
                         }
@@ -44,7 +43,7 @@ struct ServicesView: View {
                         
                         Section("Other NHS services") {
                             UrgentCareOnlineView()
-                            CardView(cardTitle: "Find NHS services near you")
+                            Text("FInd NHS services near you")
                             
                         }
                         .padding(.vertical)

@@ -21,9 +21,9 @@ struct MessagesView: View {
                         //Text("View your personal records and choices")
                         
                         VStack {
-                            Text("You have 2 inboxes")
+                            Text("You have 4 inboxes")
                                 //.foregroundStyle(.gray)
-                                .padding(-16)
+                                .padding(-8)
                         }
                         //.padding(.bottom, 8.0)
                         .padding(.top)
@@ -37,50 +37,54 @@ struct MessagesView: View {
                                     Text("Your NHS healthcare services")
                                         .badge(2)
                                         .badgeProminence(.increased)
-                                        .font(.title3)
-                                        .fontWeight(.semibold)
+                                        
                                     Text ("""
                                           You may recieve messages:
                                           • from your GP surgery
                                           • about hospital and specialist care appointments
                                           • about invitations and reminders
                                           """)
+                                    .font(.subheadline)
                                     .foregroundColor(Color("nhsGrey"))
-                                    .foregroundStyle(.gray)
+                                    
                                 }
                                 
                             })
                             VStack(alignment: .leading, spacing: 8.0) {
                                 Text("Your hosptial and specialist doctors")
-                                    .font(.title3)
-                                    .fontWeight(.semibold)
+                                    
                                 Text ("""
                                       You may send or recieve messages about:
                                       • your health
                                       • documents and letters
                                       • pre-appointment questionaires
                                       """)
+                                .font(.subheadline)
+                                .foregroundColor(Color("nhsGrey"))
                             }
                             
                             VStack(alignment: .leading, spacing: 8.0) {
                                 Text("Replies to your GP requests")
-                                    .font(.title3)
-                                    .fontWeight(.semibold)
+                                    
+                    
                                 Text ("""
                                       You may responses to queries you submitted about:
                                       • health problems
                                       • fit (sick) notes
                                       • doctor's letters
                                       """)
+                                .font(.subheadline)
+                                .foregroundColor(Color("nhsGrey"))
                             }
                             
                             VStack(alignment: .leading, spacing: 8.0) {
                                 Text("GP surgery messaging")
-                                    .font(.title3)
-                                    .fontWeight(.semibold)
+                                   
                                 Text ("""
                                       Send and view messages from staff at your GP surgery
                                       """)
+                                .font(.subheadline)
+                                .foregroundColor(Color("nhsGrey"))
                             }
 
                         }
@@ -99,6 +103,7 @@ struct MessagesView: View {
                     ProfileButtonView()
                 }
             }
+            
  
         }
     }

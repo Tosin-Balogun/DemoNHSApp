@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     
     let tip = FeatureTip()
+    @State private var trigger = false
     
     var body: some View {
         
@@ -23,25 +24,31 @@ struct HomeView: View {
                     List {
                         
                         ProfileCardViewB()
-                            .padding(.top, -32.0)
-                            .padding(.horizontal, -16)
+                            .padding(.top, -8.0)
+                            .padding(.horizontal, -8)
+                            .padding(.bottom, -24)
                             .listRowBackground(Color("nhsGrey5").opacity(0.0))
                         
                         Section("Services") {
                             NavigationLink(destination: {
-                                Text("Prescriptions")
+                                RequestMedicines()
                             }, label: {
-                                Text("Request repeat prescriptions")
+                                Text("Request medicines")
                                 
                             })
-                            Text("Check if you need urgent medical help using 111 online")
+                            UrgentCareOnlineView()
                         }
                         .padding(.vertical)
                         
                         
                         Section("Your health") {
                             Text("GP health record")
-                            Text("View and manage prescriptions")
+                            NavigationLink(destination: {
+                                Prescriptions2()
+                            }, label: {
+                                Text("Prescriptions")
+                                
+                            })
                             NavigationLink(destination: {
                                 UpcomingAndPastAppointmentsView()
                             }, label: {
@@ -52,21 +59,27 @@ struct HomeView: View {
                         .padding(.vertical)
                         
                         Section("Messages") {
-                            HStack {
-                                Image(systemName:"envelope.open")
-                                    .accessibilityElement(children: .ignore)
-                                Text("View your messages")
-                                    .badge(2)
+                            NavigationLink(destination: {
+                                MessagesView()
+                            }, label: {
+                                HStack {
+                                    Image(systemName:"envelope")
+                                        .accessibilityElement(children: .ignore)
+                                    Text("View your messages")
+                                        .badge(2)
+                                    
+                                }
+                                .padding(.vertical)
                                 
-                            }
-                            .padding(.vertical)
+                            })
                             
                         }
                         
-                        Section("Manage services for another person") {
+                        Section("Account") {
                             HStack {
                                 Image(systemName:"person.2.circle")
-                                Text("Switch profiles")
+                                Text("Manage services for another person")
+                                    .badge(2)
                             }
                         }
                         .padding(.vertical)
@@ -86,22 +99,22 @@ struct HomeView: View {
                         }
                         .padding(.horizontal, -16.0)
                         
-                        
-                        NavigationLink {
-                            Text("Help using NHS app")
-                        } label: {
+                        VStack{
                             
-                            HStack {
-                                Image(systemName:"questionmark.circle")
-                                Text("Get help with using the NHS App")
-                            }
-                            .padding(.vertical)
-                            .padding(.leading, -8.0)
+                            Button(action: {
+                                trigger.toggle()
+                            }, label: {
+                                Label("Get help using the NHS App", systemImage: "questionmark.circle")
+                                    .fontWeight(.semibold)
+                                    .foregroundStyle(.nhsBlue)
+                            })
+                            .buttonStyle(.borderless)
+                            .padding(.horizontal, -16.0)
+                            .sensoryFeedback(.impact, trigger: trigger)
+                            .popoverTip(tip, arrowEdge: .bottom)
+                            // Popover on last item
                         }
-                        .foregroundStyle(.nhsBlue)
-                        .popoverTip(tip, arrowEdge: .bottom)
                         .listRowBackground(Color("nhsGrey5").opacity(0.0))
-                        // Popover on last item
                         
                     }
                     .padding(-8.0)

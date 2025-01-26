@@ -19,7 +19,7 @@ struct ProfileCardViewB: View {
                 Image("NHS-logo-2")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 94.0, height: 94.0)
+                    .frame(height: 24.0)
 
 
                 VStack(alignment: .leading) {

@@ -10,12 +10,14 @@ import SwiftUI
 struct Filter: View {
     
     @State private var showFilter = false
+    @State private var trigger = false
     
     var body: some View {
         
         HStack(spacing: 16.0) {
             Button(action: {
                 showFilter.toggle()
+                trigger.toggle()
             }, label: {
                 Label("Filter", systemImage: "line.3.horizontal.decrease")
                     .fontWeight(.semibold)
@@ -24,12 +26,14 @@ struct Filter: View {
 //                    .frame(width: 34, height: 34)
 //                    .aspectRatio(contentMode: .fit)
             })
+            .buttonStyle(.borderless)
+            .sensoryFeedback(.impact, trigger: trigger)
 
             
         }
         .foregroundStyle(.nhsGrey)
         .sheet(isPresented: $showFilter, content: {
-            Text("Filter by will appear here with controls and dismiss action")
+            FilterContent()
 //                .presentationDetents([ .medium, .large])
         })
 
