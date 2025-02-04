@@ -36,7 +36,7 @@ struct HomeView: View {
                                 Text("Request medicines")
                                 
                             })
-                            UrgentCareOnlineView()
+                            UrgentCareSafariView()
                         }
                         .padding(.vertical)
                         

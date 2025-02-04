@@ -13,6 +13,8 @@
 		4E3AB8D52C99A6A1001F6167 /* LogOutv1.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3AB8D42C99A6A1001F6167 /* LogOutv1.1.swift */; };
 		4E3AB8D72C99AC01001F6167 /* LogOutv3.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3AB8D62C99AC01001F6167 /* LogOutv3.1.swift */; };
 		4E5443992D06FDC0009B3BAB /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5443982D06FDBB009B3BAB /* Carousel.swift */; };
+		4E682B6C2D4F5CF100C9D3D7 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E682B6B2D4F5CEC00C9D3D7 /* SafariView.swift */; };
+		4E682B6E2D4F5E2D00C9D3D7 /* UrgentCareSafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E682B6D2D4F5E2100C9D3D7 /* UrgentCareSafariView.swift */; };
 		4E6B41562BCFC0820095808E /* ProfileCardViewB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B41552BCFC0820095808E /* ProfileCardViewB.swift */; };
 		4E7E4DEF2B9F46470042625E /* ProfileCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E4DEE2B9F46470042625E /* ProfileCardView.swift */; };
 		4E7E4DF22B9F4ED10042625E /* MessageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E4DF12B9F4ED10042625E /* MessageDetailView.swift */; };
@@ -54,6 +56,8 @@
 		4E3AB8D62C99AC01001F6167 /* LogOutv3.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutv3.1.swift; sourceTree = "<group>"; };
 		4E5443982D06FDBB009B3BAB /* Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
 		4E662E082C2C39F000C8C559 /* BoardingPass.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = BoardingPass.pkpass; sourceTree = "<group>"; };
+		4E682B6B2D4F5CEC00C9D3D7 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		4E682B6D2D4F5E2100C9D3D7 /* UrgentCareSafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgentCareSafariView.swift; sourceTree = "<group>"; };
 		4E6B41552BCFC0820095808E /* ProfileCardViewB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCardViewB.swift; sourceTree = "<group>"; };
 		4E7E4DEE2B9F46470042625E /* ProfileCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCardView.swift; sourceTree = "<group>"; };
 		4E7E4DF12B9F4ED10042625E /* MessageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailView.swift; sourceTree = "<group>"; };
@@ -237,6 +241,8 @@
 				4EFE35A12D45105800136D5D /* FilterContent.swift */,
 				4ED1B08E2BA0CC300047BE43 /* UrgentCareOnlineView.swift */,
 				4ED032D02BA1B1B0000562D5 /* UrgentCareWebView.swift */,
+				4E682B6D2D4F5E2100C9D3D7 /* UrgentCareSafariView.swift */,
+				4E682B6B2D4F5CEC00C9D3D7 /* SafariView.swift */,
 				4ED032D22BA1E0B3000562D5 /* AccessServicesPromoView.swift */,
 			);
 			path = Components;
@@ -349,6 +355,7 @@
 				4ED1B0882BA0708E0047BE43 /* AccountSettingsView.swift in Sources */,
 				4EC54BE72B972B22003EA856 /* CardView.swift in Sources */,
 				4E3AB8D52C99A6A1001F6167 /* LogOutv1.1.swift in Sources */,
+				4E682B6E2D4F5E2D00C9D3D7 /* UrgentCareSafariView.swift in Sources */,
 				4EC54BE22B9709B3003EA856 /* YourHealthView.swift in Sources */,
 				4E3AB8D32C99A524001F6167 /* LogOutv3.swift in Sources */,
 				4ED1B08B2BA095BB0047BE43 /* HelpSupportView.swift in Sources */,
@@ -361,6 +368,7 @@
 				4EC54BE42B9709BF003EA856 /* MessagesView.swift in Sources */,
 				4E3AB8D72C99AC01001F6167 /* LogOutv3.1.swift in Sources */,
 				4EACA8722D462F90002309B4 /* BarcodeContent.swift in Sources */,
+				4E682B6C2D4F5CF100C9D3D7 /* SafariView.swift in Sources */,
 				4ED1B08D2BA0A95A0047BE43 /* ProfileButtonView.swift in Sources */,
 				4E113DC12C995A3D0030CF7C /* LogOutv1.swift in Sources */,
 				4EC54BDE2B970977003EA856 /* HomeView.swift in Sources */,

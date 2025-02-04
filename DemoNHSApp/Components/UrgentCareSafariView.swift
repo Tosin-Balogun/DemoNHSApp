@@ -1,21 +1,21 @@
 //
-//  UrgentCareOnlineView.swift
+//  UrgentCareSafariView.swift
 //  DemoNHSApp
 //
-//  Created by Tosin Balogun on 12/03/2024.
+//  Created by Tosin Balogun on 02/02/2025.
 //
 
 import SwiftUI
 
 import WebKit
 
-struct UrgentCareOnlineView: View {
+struct UrgentCareSafariView: View {
     
-    @State private var isPresentWebView = false
+    @State private var isPresentSafariView = false
     
     var body: some View {
         VStack(alignment: .leading) {
-            Button(action: {isPresentWebView.toggle()}, label: {
+            Button(action: {isPresentSafariView.toggle()}, label: {
                 HStack(alignment: .center) {
                     Text("Check if you need urgent medical help using 111 online")
                         .foregroundColor(Color.black)
@@ -25,17 +25,17 @@ struct UrgentCareOnlineView: View {
                         .accessibilityElement(children: .ignore)
                 }
             })
-            
+           
             
         }
-        .sheet(isPresented: $isPresentWebView, content: {
-            UrgentCareWebView()
+        .fullScreenCover(isPresented: $isPresentSafariView, content: {
+            SafariView(url: URL(string: "https://111.nhs.uk/")!)
+                .ignoresSafeArea()
             
         })
     }
 }
 
 #Preview {
-    UrgentCareOnlineView()
+    UrgentCareSafariView()
 }
-
