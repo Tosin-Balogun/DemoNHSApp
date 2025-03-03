@@ -147,7 +147,7 @@ struct RequestMedicines: View {
                                 .fontWeight(.semibold)
                                 .frame(height: 58.0)
                                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                                .foregroundStyle(.white)
+                                .foregroundStyle(.nhsWhite)
                                 .background(.nhsGreen)
                                 .font(.body)
                                 .cornerRadius(8)

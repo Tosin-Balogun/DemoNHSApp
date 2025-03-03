@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "nhs-logo-2.svg",
+      "filename" : "App menu image.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -12,7 +12,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "nhs-logo-2b.svg",
+      "filename" : "App menu imageB.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -48,8 +48,5 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
-  },
-  "properties" : {
-    "preserves-vector-representation" : true
   }
 }

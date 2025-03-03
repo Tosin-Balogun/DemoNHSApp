@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @AppStorage("showCarousel") var showCarousel = true
+    @AppStorage("showGettingStarted") var showGettingStarted = true
     @State private var tabSelection = 0
 //    let tip = FeatureTip()
     
@@ -49,7 +49,7 @@ struct ContentView: View {
                     ) }
                     .tag(3)
             }
-            .toolbarBackground(.nhsBlue, for: .tabBar)
+            .toolbarBackground(.nhsBlue2, for: .tabBar)
             .toolbarBackground(.visible, for: .tabBar)
             .toolbarColorScheme(.dark, for: .tabBar)
  
@@ -58,8 +58,8 @@ struct ContentView: View {
         .sensoryFeedback(.impact, trigger: tabSelection)
 //        .popoverTip(tip, arrowEdge: .bottom)
 //        .tabViewStyle(.page(indexDisplayMode: .always))
-        .sheet(isPresented: $showCarousel) {
-            Carousel()
+        .sheet(isPresented: $showGettingStarted) {
+            GettingStarted()
                 .interactiveDismissDisabled()
         }
     }

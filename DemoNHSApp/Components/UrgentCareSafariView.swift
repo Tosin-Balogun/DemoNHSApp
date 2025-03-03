@@ -18,7 +18,9 @@ struct UrgentCareSafariView: View {
             Button(action: {isPresentSafariView.toggle()}, label: {
                 HStack(alignment: .center) {
                     Text("Check if you need urgent medical help using 111 online")
-                        .foregroundColor(Color.black)
+                        .foregroundColor(.nhsBlack)
+                        .accessibilityElement(children: .ignore)
+                        .accessibilityLabel("Check if you need urgent medical help using one one one online")
                     Spacer()
                     Image(systemName:"arrow.up.right")
                         .foregroundColor(Color.gray)

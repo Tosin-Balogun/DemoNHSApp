@@ -12,14 +12,14 @@
 		4E3AB8D32C99A524001F6167 /* LogOutv3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3AB8D22C99A524001F6167 /* LogOutv3.swift */; };
 		4E3AB8D52C99A6A1001F6167 /* LogOutv1.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3AB8D42C99A6A1001F6167 /* LogOutv1.1.swift */; };
 		4E3AB8D72C99AC01001F6167 /* LogOutv3.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3AB8D62C99AC01001F6167 /* LogOutv3.1.swift */; };
-		4E5443992D06FDC0009B3BAB /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5443982D06FDBB009B3BAB /* Carousel.swift */; };
+		4E5443992D06FDC0009B3BAB /* GettingStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5443982D06FDBB009B3BAB /* GettingStarted.swift */; };
 		4E682B6C2D4F5CF100C9D3D7 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E682B6B2D4F5CEC00C9D3D7 /* SafariView.swift */; };
 		4E682B6E2D4F5E2D00C9D3D7 /* UrgentCareSafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E682B6D2D4F5E2100C9D3D7 /* UrgentCareSafariView.swift */; };
 		4E6B41562BCFC0820095808E /* ProfileCardViewB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B41552BCFC0820095808E /* ProfileCardViewB.swift */; };
 		4E7E4DEF2B9F46470042625E /* ProfileCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E4DEE2B9F46470042625E /* ProfileCardView.swift */; };
 		4E7E4DF22B9F4ED10042625E /* MessageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E4DF12B9F4ED10042625E /* MessageDetailView.swift */; };
 		4E7E4DF52B9F4FA90042625E /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E4DF42B9F4FA90042625E /* MessageListView.swift */; };
-		4E9E2A6B2CEA7E2700ED00A9 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E9E2A6A2CEA7E2700ED00A9 /* Launch Screen.storyboard */; };
+		4E9E2A6B2CEA7E2700ED00A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E9E2A6A2CEA7E2700ED00A9 /* LaunchScreen.storyboard */; };
 		4EAB1FA42CF2116F00DF2F9F /* FeatureTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAB1FA32CF2116700DF2F9F /* FeatureTip.swift */; };
 		4EACA8722D462F90002309B4 /* BarcodeContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EACA8712D462F81002309B4 /* BarcodeContent.swift */; };
 		4EACA8742D46306E002309B4 /* PrescriptionBarcode2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EACA8732D463066002309B4 /* PrescriptionBarcode2.swift */; };
@@ -54,7 +54,7 @@
 		4E3AB8D22C99A524001F6167 /* LogOutv3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutv3.swift; sourceTree = "<group>"; };
 		4E3AB8D42C99A6A1001F6167 /* LogOutv1.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutv1.1.swift; sourceTree = "<group>"; };
 		4E3AB8D62C99AC01001F6167 /* LogOutv3.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutv3.1.swift; sourceTree = "<group>"; };
-		4E5443982D06FDBB009B3BAB /* Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
+		4E5443982D06FDBB009B3BAB /* GettingStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettingStarted.swift; sourceTree = "<group>"; };
 		4E662E082C2C39F000C8C559 /* BoardingPass.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = BoardingPass.pkpass; sourceTree = "<group>"; };
 		4E682B6B2D4F5CEC00C9D3D7 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		4E682B6D2D4F5E2100C9D3D7 /* UrgentCareSafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgentCareSafariView.swift; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		4E7E4DEE2B9F46470042625E /* ProfileCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCardView.swift; sourceTree = "<group>"; };
 		4E7E4DF12B9F4ED10042625E /* MessageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailView.swift; sourceTree = "<group>"; };
 		4E7E4DF42B9F4FA90042625E /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
-		4E9E2A6A2CEA7E2700ED00A9 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		4E9E2A6A2CEA7E2700ED00A9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E9E2A6C2CEA839200ED00A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4EAB1FA32CF2116700DF2F9F /* FeatureTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureTip.swift; sourceTree = "<group>"; };
 		4EACA8712D462F81002309B4 /* BarcodeContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeContent.swift; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 			children = (
 				4E9E2A6C2CEA839200ED00A9 /* Info.plist */,
 				4EC54BCB2B96FF05003EA856 /* DemoNHSAppApp.swift */,
-				4E9E2A6A2CEA7E2700ED00A9 /* Launch Screen.storyboard */,
+				4E9E2A6A2CEA7E2700ED00A9 /* LaunchScreen.storyboard */,
 				4EC54BCD2B96FF05003EA856 /* ContentView.swift */,
 				4EC54BD92B970866003EA856 /* Home */,
 				4EC54BDA2B970870003EA856 /* Services */,
@@ -225,7 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				4EC54BE62B972B22003EA856 /* CardView.swift */,
-				4E5443982D06FDBB009B3BAB /* Carousel.swift */,
+				4E5443982D06FDBB009B3BAB /* GettingStarted.swift */,
 				4EFE35B32D4527DA00136D5D /* PrescriptionBarcode.swift */,
 				4EACA8752D463791002309B4 /* FloatingActionButton.swift */,
 				4EACA8732D463066002309B4 /* PrescriptionBarcode2.swift */,
@@ -336,7 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E9E2A6B2CEA7E2700ED00A9 /* Launch Screen.storyboard in Resources */,
+				4E9E2A6B2CEA7E2700ED00A9 /* LaunchScreen.storyboard in Resources */,
 				4EC54BD32B96FF08003EA856 /* Preview Assets.xcassets in Resources */,
 				4EC54BD02B96FF08003EA856 /* Assets.xcassets in Resources */,
 			);
@@ -382,7 +382,7 @@
 				4EACA8762D463797002309B4 /* FloatingActionButton.swift in Sources */,
 				4EACA8782D463EDE002309B4 /* PrescriptionTip.swift in Sources */,
 				4EC54BCC2B96FF05003EA856 /* DemoNHSAppApp.swift in Sources */,
-				4E5443992D06FDC0009B3BAB /* Carousel.swift in Sources */,
+				4E5443992D06FDC0009B3BAB /* GettingStarted.swift in Sources */,
 				4E7E4DF22B9F4ED10042625E /* MessageDetailView.swift in Sources */,
 				4ED1B08F2BA0CC300047BE43 /* UrgentCareOnlineView.swift in Sources */,
 			);
@@ -515,8 +515,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"DemoNHSApp/Preview Content\"";
 				DEVELOPMENT_TEAM = H4X544KPLA;
 				ENABLE_PREVIEWS = YES;
@@ -524,13 +525,14 @@
 				INFOPLIST_FILE = DemoNHSApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tosincodexcode.DemoNHSApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -549,8 +551,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"DemoNHSApp/Preview Content\"";
 				DEVELOPMENT_TEAM = H4X544KPLA;
 				ENABLE_PREVIEWS = YES;
@@ -558,13 +561,14 @@
 				INFOPLIST_FILE = DemoNHSApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tosincodexcode.DemoNHSApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;

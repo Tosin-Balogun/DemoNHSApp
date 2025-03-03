@@ -4,12 +4,8 @@
 <dict>
 	<key>UILaunchScreen</key>
 	<dict>
-		<key>UIColorName</key>
-		<string>nhsBlue</string>
 		<key>UIImageName</key>
-		<string>nhs-logo-3</string>
-		<key>UILaunchScreen</key>
-		<dict/>
+		<string>LaunchScreen</string>
 	</dict>
 </dict>
 </plist>
