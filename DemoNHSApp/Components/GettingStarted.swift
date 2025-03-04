@@ -44,7 +44,7 @@ struct GettingStarted: View {
                     .padding(16.0)
                     .tag(1)
                     .accessibilityElement(children: .ignore)
-                    .accessibilityLabel("Welcome to the NHS App. Before you start, here are some tips to find your way around.")
+                    .accessibilityLabel("Welcome to the NHS App. Before you start, here are some tips to help you find your way around.")
                     
                     ScrollView {
                         if verticalSizeClass == .regular {
@@ -64,7 +64,7 @@ struct GettingStarted: View {
                                 
                             }
                             .accessibilityElement(children: .ignore)
-                            .accessibilityLabel("To move around the app, use the menu buttons at the top and bottom of the app to reach different areas.")
+                            .accessibilityLabel("When you start using the app, you'll be able to move between areas using the menu buttons at the top and bottom of the app.")
                             .padding(16.0)
                         } else {
                             //landscape mode here
@@ -89,7 +89,7 @@ struct GettingStarted: View {
                                 
                             }
                             .accessibilityElement(children: .ignore)
-                            .accessibilityLabel("To move around the app, use the menu buttons at the top and bottom of the app to reach different areas.")
+                            .accessibilityLabel("When you start using the app, you'll be able to move between areas using the menu buttons at the top and bottom of the app.")
                             .padding(16.0)
                         }
                     }
@@ -123,7 +123,7 @@ struct GettingStarted: View {
                             }
                             .padding(16.0)
                             .accessibilityElement(children: .ignore)
-                            .accessibilityLabel("Use the services area in the bottom menu to start using NHS services or take steps to look after your health. In there, you can request prescriptions, check for available GP appointments, find services near you and browse health information.")
+                            .accessibilityLabel("Use the services area in the bottom menu to start using NHS services or take steps to look after your health. In that area, you can request prescriptions, check for available GP appointments, find services near you and browse health information.")
                         } else {
                             //landscape mode here
                             VStack(alignment: .leading, spacing: 8.0) {
@@ -155,7 +155,7 @@ struct GettingStarted: View {
                                 
                             }
                             .accessibilityElement(children: .ignore)
-                            .accessibilityLabel("Use the services area in the bottom menu to start using NHS services or take steps to look after your health. In there, you can request prescriptions, check for available GP appointments, find services near you and browse health information.")
+                            .accessibilityLabel("Use the services area in the bottom menu to start using NHS services or take steps to look after your health. In that area, you can request prescriptions, check for available GP appointments, find services near you and browse health information.")
                             .padding(16.0)
                         }
                         
@@ -189,7 +189,7 @@ struct GettingStarted: View {
                             }
                             .padding(16.0)
                             .accessibilityElement(children: .ignore)
-                            .accessibilityLabel("Use the 'your health' area in the bottom menu to view records and manage your healthcare. In there, you can access your GP health record, manage GP and hospital appointments and check on your prescription requests.")
+                            .accessibilityLabel("Use the 'your health' area in the bottom menu to view records and manage your healthcare. In that area, you can access your GP health record, manage GP and hospital appointments and check on your prescription requests.")
                         } else {
                             //landscape mode here
                             VStack(alignment: .leading, spacing: 8.0) {
@@ -220,7 +220,7 @@ struct GettingStarted: View {
                                 
                             }
                             .accessibilityElement(children: .ignore)
-                            .accessibilityLabel("Use the 'your health' area in the bottom menu to view records and manage your healthcare. In there, you can access your GP health record, manage GP and hospital appointments and check on your prescription requests.")
+                            .accessibilityLabel("Use the 'your health' area in the bottom menu to view records and manage your healthcare. In that area, you can access your GP health record, manage GP and hospital appointments and check on your prescription requests.")
                             .padding(16.0)
                         }
                         
@@ -304,7 +304,7 @@ struct GettingStarted: View {
                             Image(systemName: "chevron.left")
                             Text("Previous")
                                 .fontWeight(.semibold)
-                        })
+                        }).sensoryFeedback(.impact, trigger: selectedTab)
                     }
 //                    Spacer()
 //                    Text("\(selectedTab) of 4")
@@ -319,7 +319,7 @@ struct GettingStarted: View {
                             Text("Next")
                                 .fontWeight(.semibold)
                             Image(systemName: "chevron.right")
-                        })
+                        }).sensoryFeedback(.impact, trigger: selectedTab)
                     } else {
                         withAnimation{
                             
@@ -328,7 +328,7 @@ struct GettingStarted: View {
                             }, label: {
                                 Text("Done")
                                     .fontWeight(.semibold)
-                            })
+                            }).sensoryFeedback(.impact, trigger: selectedTab)
                         }
                     }
                 }
