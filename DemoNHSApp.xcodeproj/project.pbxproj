@@ -13,6 +13,8 @@
 		4E3AB8D52C99A6A1001F6167 /* LogOutv1.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3AB8D42C99A6A1001F6167 /* LogOutv1.1.swift */; };
 		4E3AB8D72C99AC01001F6167 /* LogOutv3.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3AB8D62C99AC01001F6167 /* LogOutv3.1.swift */; };
 		4E5443992D06FDC0009B3BAB /* GettingStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5443982D06FDBB009B3BAB /* GettingStarted.swift */; };
+		4E6144652D9410F40071B66A /* SafariViewFindService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6144642D9410E50071B66A /* SafariViewFindService.swift */; };
+		4E6144672D9411490071B66A /* FindServiceSafarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6144662D94113C0071B66A /* FindServiceSafarView.swift */; };
 		4E682B6C2D4F5CF100C9D3D7 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E682B6B2D4F5CEC00C9D3D7 /* SafariView.swift */; };
 		4E682B6E2D4F5E2D00C9D3D7 /* UrgentCareSafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E682B6D2D4F5E2100C9D3D7 /* UrgentCareSafariView.swift */; };
 		4E6B41562BCFC0820095808E /* ProfileCardViewB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6B41552BCFC0820095808E /* ProfileCardViewB.swift */; };
@@ -55,6 +57,8 @@
 		4E3AB8D42C99A6A1001F6167 /* LogOutv1.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutv1.1.swift; sourceTree = "<group>"; };
 		4E3AB8D62C99AC01001F6167 /* LogOutv3.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutv3.1.swift; sourceTree = "<group>"; };
 		4E5443982D06FDBB009B3BAB /* GettingStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettingStarted.swift; sourceTree = "<group>"; };
+		4E6144642D9410E50071B66A /* SafariViewFindService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewFindService.swift; sourceTree = "<group>"; };
+		4E6144662D94113C0071B66A /* FindServiceSafarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindServiceSafarView.swift; sourceTree = "<group>"; };
 		4E662E082C2C39F000C8C559 /* BoardingPass.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = BoardingPass.pkpass; sourceTree = "<group>"; };
 		4E682B6B2D4F5CEC00C9D3D7 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		4E682B6D2D4F5E2100C9D3D7 /* UrgentCareSafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgentCareSafariView.swift; sourceTree = "<group>"; };
@@ -242,7 +246,9 @@
 				4ED1B08E2BA0CC300047BE43 /* UrgentCareOnlineView.swift */,
 				4ED032D02BA1B1B0000562D5 /* UrgentCareWebView.swift */,
 				4E682B6D2D4F5E2100C9D3D7 /* UrgentCareSafariView.swift */,
+				4E6144662D94113C0071B66A /* FindServiceSafarView.swift */,
 				4E682B6B2D4F5CEC00C9D3D7 /* SafariView.swift */,
+				4E6144642D9410E50071B66A /* SafariViewFindService.swift */,
 				4ED032D22BA1E0B3000562D5 /* AccessServicesPromoView.swift */,
 			);
 			path = Components;
@@ -383,8 +389,10 @@
 				4EACA8782D463EDE002309B4 /* PrescriptionTip.swift in Sources */,
 				4EC54BCC2B96FF05003EA856 /* DemoNHSAppApp.swift in Sources */,
 				4E5443992D06FDC0009B3BAB /* GettingStarted.swift in Sources */,
+				4E6144652D9410F40071B66A /* SafariViewFindService.swift in Sources */,
 				4E7E4DF22B9F4ED10042625E /* MessageDetailView.swift in Sources */,
 				4ED1B08F2BA0CC300047BE43 /* UrgentCareOnlineView.swift in Sources */,
+				4E6144672D9411490071B66A /* FindServiceSafarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +456,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "NHS App prototype";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -504,6 +513,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "NHS App prototype";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
@@ -517,12 +527,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"DemoNHSApp/Preview Content\"";
 				DEVELOPMENT_TEAM = H4X544KPLA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DemoNHSApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "NHS App prototype A";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
@@ -532,8 +543,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tosincodexcode.DemoNHSApp;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tosincodexcode.NHSAppPrototypeA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -553,12 +564,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"DemoNHSApp/Preview Content\"";
 				DEVELOPMENT_TEAM = H4X544KPLA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DemoNHSApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "NHS App prototype A";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
@@ -568,8 +580,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tosincodexcode.DemoNHSApp;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tosincodexcode.NHSAppPrototypeA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

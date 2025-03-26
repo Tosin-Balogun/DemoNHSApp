@@ -44,10 +44,10 @@ struct ProfileCardViewB: View {
 
             
         }
-        .sheet(isPresented: $showProfile, content: {
-            AccountSettingsView()
-//                .presentationDetents([.medium, .large])
-        })
+//        .sheet(isPresented: $showProfile, content: {
+//            AccountSettingsView()
+////                .presentationDetents([.medium, .large])
+//        })
     }
 }
 
