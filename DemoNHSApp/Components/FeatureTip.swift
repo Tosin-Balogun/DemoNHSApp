@@ -12,19 +12,29 @@ import TipKit
 
 // Define your tip's content.
 struct FeatureTip: Tip {
+    
+    @State private var turnBiometrics = false
+    
     var title: Text {
-        Text("Get help with services")
+        Text("Log in faster with TouchID")
     }
 
 
     var message: Text? {
-        Text("You access prescriptions or doctors appointments under services tab below.")
+        Text("TouchID lets you log into the app faster and securely using your fingerprint rather than a password")
     }
 
 
     var image: Image? {
-        Image(systemName: "cross.fill")
+        Image(systemName: "touchid")
     }
+    
+    var actions: [Action] {
+        // Define action for button.
+        Action(id: "turn-touchid", title: "Touch on TouchID")
+
+    }
+    
 }
 
 //Example view to show tip

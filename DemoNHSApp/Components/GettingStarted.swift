@@ -113,8 +113,6 @@ struct GettingStarted: View {
                                     .padding(.bottom, 8.0)
                                 Text ("""
                               You can:
-                              • request repeat prescriptions
-                              • check for available GP appointments
                               • find services near you
                               • browse health information
                               """)
@@ -143,8 +141,6 @@ struct GettingStarted: View {
                                             .padding(.bottom, 8.0)
                                         Text ("""
                                       You can:
-                                      • request repeat prescriptions
-                                      • check for available GP appointments
                                       • find services near you
                                       • browse health information
                                       """)
@@ -180,9 +176,8 @@ struct GettingStarted: View {
                                     .padding(.bottom, 8.0)
                                 Text ("""
                                   You can:
-                                  • access your GP health record
-                                  • manage GP and hospital appointments
                                   • check on your prescription requests
+                                  • manage GP and hospital appointments
                                   """)
                                 Spacer()
                                 
@@ -209,9 +204,8 @@ struct GettingStarted: View {
                                             .padding(.bottom, 8.0)
                                         Text ("""
                                           You can:
-                                          • access your GP health record
-                                          • manage GP and hospital appointments
                                           • check on your prescription requests
+                                          • manage GP and hospital appointments
                                           """)
                                         Spacer()
                                     }

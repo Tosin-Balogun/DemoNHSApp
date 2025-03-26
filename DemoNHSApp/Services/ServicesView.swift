@@ -43,7 +43,7 @@ struct ServicesView: View {
                         
                         Section("Other NHS services") {
                             UrgentCareOnlineView()
-                            Text("FInd NHS services near you")
+                            FindServiceSafariView()
                             
                         }
                         .padding(.vertical)
