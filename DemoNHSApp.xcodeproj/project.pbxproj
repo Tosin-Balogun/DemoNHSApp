@@ -27,6 +27,7 @@
 		4EACA8742D46306E002309B4 /* PrescriptionBarcode2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EACA8732D463066002309B4 /* PrescriptionBarcode2.swift */; };
 		4EACA8762D463797002309B4 /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EACA8752D463791002309B4 /* FloatingActionButton.swift */; };
 		4EACA8782D463EDE002309B4 /* PrescriptionTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EACA8772D463ED6002309B4 /* PrescriptionTip.swift */; };
+		4EB5D2942D95883200CF3953 /* WhatsNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB5D2932D95882B00CF3953 /* WhatsNew.swift */; };
 		4EC54BCC2B96FF05003EA856 /* DemoNHSAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC54BCB2B96FF05003EA856 /* DemoNHSAppApp.swift */; };
 		4EC54BCE2B96FF05003EA856 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC54BCD2B96FF05003EA856 /* ContentView.swift */; };
 		4EC54BD02B96FF08003EA856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC54BCF2B96FF08003EA856 /* Assets.xcassets */; };
@@ -73,6 +74,7 @@
 		4EACA8732D463066002309B4 /* PrescriptionBarcode2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrescriptionBarcode2.swift; sourceTree = "<group>"; };
 		4EACA8752D463791002309B4 /* FloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
 		4EACA8772D463ED6002309B4 /* PrescriptionTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrescriptionTip.swift; sourceTree = "<group>"; };
+		4EB5D2932D95882B00CF3953 /* WhatsNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNew.swift; sourceTree = "<group>"; };
 		4EC54BC82B96FF05003EA856 /* DemoNHSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoNHSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC54BCB2B96FF05003EA856 /* DemoNHSAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoNHSAppApp.swift; sourceTree = "<group>"; };
 		4EC54BCD2B96FF05003EA856 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 			children = (
 				4EC54BE62B972B22003EA856 /* CardView.swift */,
 				4E5443982D06FDBB009B3BAB /* GettingStarted.swift */,
+				4EB5D2932D95882B00CF3953 /* WhatsNew.swift */,
 				4EFE35B32D4527DA00136D5D /* PrescriptionBarcode.swift */,
 				4EACA8752D463791002309B4 /* FloatingActionButton.swift */,
 				4EACA8732D463066002309B4 /* PrescriptionBarcode2.swift */,
@@ -389,6 +392,7 @@
 				4EACA8782D463EDE002309B4 /* PrescriptionTip.swift in Sources */,
 				4EC54BCC2B96FF05003EA856 /* DemoNHSAppApp.swift in Sources */,
 				4E5443992D06FDC0009B3BAB /* GettingStarted.swift in Sources */,
+				4EB5D2942D95883200CF3953 /* WhatsNew.swift in Sources */,
 				4E6144652D9410F40071B66A /* SafariViewFindService.swift in Sources */,
 				4E7E4DF22B9F4ED10042625E /* MessageDetailView.swift in Sources */,
 				4ED1B08F2BA0CC300047BE43 /* UrgentCareOnlineView.swift in Sources */,
