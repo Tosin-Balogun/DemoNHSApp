@@ -59,7 +59,7 @@ struct ContentView: View {
 //        .popoverTip(tip, arrowEdge: .bottom)
 //        .tabViewStyle(.page(indexDisplayMode: .always))
         .sheet(isPresented: $showGettingStarted) {
-            GettingStarted()
+            WhatsNew()
                 .interactiveDismissDisabled()
         }
     }

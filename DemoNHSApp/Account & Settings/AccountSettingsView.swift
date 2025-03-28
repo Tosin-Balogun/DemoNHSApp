@@ -23,30 +23,72 @@ struct AccountSettingsView: View {
                     
                     
                     List {
-                        //Text("View your personal records and choices")
-                        
-                        VStack {
-                            Text("Change your NHS App settings and personal details")
-                                //.foregroundStyle(.gray)
-                                .padding(.horizontal, -8)
-                                .padding(.top, -16)
-                        }
-                        //.padding(.bottom, 8.0)
-                        .padding(.top)
-                        .listRowBackground(Color("nhsGrey5").opacity(0.0))
                         
                         Section {
+                            // Section for profile
+                            VStack(alignment: .leading){
+                                Text("Mary Swanson")
+                                    .font(.title)
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(Color(red: 0.0, green: 0.1843137254901961, blue: 0.3607843137254902))
+                                Text("**Date of birth:** 12 September 1997")
+                                    .foregroundColor(Color(red: 0.001, green: 0.186, blue: 0.361))
+                                Text("**NHS number:** 123 456 7809")
+                                    .foregroundColor(Color(red: 0.001, green: 0.186, blue: 0.361))
+                            }
                             NavigationLink(destination: {
                                 Text("Manage services for another person")
                             }, label: {
                                 Text("Manage services for another person")
+                                    .foregroundColor(Color(red: 0.001, green: 0.186, blue: 0.361))
                                 
                             })
-                            Text("Change your contact or login details")
-                            Text("Turn on fingerprint, face or iris login")
-                            Text("Manage your notifications")
-                            Text("Manage cookies and read legal information")
-                            Text("Update your GP surgery on changes to your personal details")
+
+                        }
+                        .padding(.vertical)
+                        .listRowBackground(Color(red: 0.8235294117647058, green: 0.8823529411764706, blue: 0.9372549019607843))
+                        
+                        Section ("Personal details") {
+                            // Section for personal details
+                            NavigationLink(destination: {
+                                Text("Contact details")
+                            }, label: {
+                                Text("Contact details")
+                                
+                            })
+                            Text("View or change GP surgery")
+                        }
+                        .padding(.vertical)
+                        
+                        Section ("Health choices") {
+                            // Section for health choices
+                            NavigationLink(destination: {
+                                Text("Organ donation decision")
+                            }, label: {
+                                Text("Organ donation decision")
+                                
+                            })
+                            Text("Health data sharing decision")
+                            Text("Take part in health research")
+                        }
+                        .padding(.vertical)
+                        
+                        Section ("Settings") {
+                            Text("Notifications")
+                            Text("Touch ID")
+                            Text("Login and security")
+                            Text("Cookies")
+                        }
+                        .padding(.vertical)
+                        
+                        Section ("About the NHS App") {
+                            Text("Privacy and legal policies")
+                            Text("Join our user research panel")
+                        }
+                        .padding(.vertical)
+                        
+                        Section {
+                            // Section for log out button
                             Button(action: {
                                 showLogOut.toggle()
                                 trigger.toggle()
@@ -78,20 +120,17 @@ struct AccountSettingsView: View {
 //                                Text("All progress will be reset once you log out")
 
                         }
-
                         } footer: {
                             Text("Version: 2.36.6 (2.36.0)")
                         }
-                        .padding(.vertical)
 
                         
                     }
-                    .padding(-8.0)
                     
                 }
                 //VStack housing the list stops here
             }
-            .navigationTitle("Account and settings")
+            .navigationTitle("Account")
  
         }
     }
