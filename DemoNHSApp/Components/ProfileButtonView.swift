@@ -11,6 +11,7 @@ struct ProfileButtonView: View {
     
     @State private var showProfile = false
     @State private var showHelp = false
+    let tip = AccountTip()
     
     var body: some View {
         
@@ -33,6 +34,7 @@ struct ProfileButtonView: View {
 //                    .frame(width: 34, height: 34)
 //                    .aspectRatio(contentMode: .fit)
             })
+            .popoverTip(tip, arrowEdge: .bottom)
             
         }
         .foregroundStyle(.nhsGrey)

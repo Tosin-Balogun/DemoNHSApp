@@ -1,18 +1,19 @@
 //
-//  WhatsNew.swift
+//  WhatExistTips.swift
 //  DemoNHSApp
 //
-//  Created by Tosin Balogun on 27/03/2025.
+//  Created by Tosin Balogun on 28/03/2025.
 //
+
 
 import SwiftUI
 
-struct WhatsNew: View {
+struct WhatExistTips: View {
     
     @Environment(\.dismiss) private var dismiss
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     @Environment(\.verticalSizeClass) private var verticalSizeClass
-    @State private var showAccount = false
+    @State private var turnBiometrics = false
     @State var selectedTab: Int = 1
     
     var body: some View {
@@ -33,25 +34,25 @@ struct WhatsNew: View {
                                 VStack(alignment: .leading, spacing: 8.0) {
                                     
                                     Spacer()
-                                    Image("App menu image")
+                                    Image("App biometrics image")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
                                         .padding(.bottom, 8.0)
                                     
-                                    Text("Introducing your new account area")
+                                    Text("Log in faster using your fingerprint")
                                         .font(.title)
                                         .fontWeight(.semibold)
                                     Text ("""
-                                      We've updated the account area to bring together your:
-                                      • personal details
-                                      • health choices
-                                      • app settings
+                                      You can turn on fingerprint log in for the NHS App.
+                                      
+                                      It's quicker and more secure than using a password
+                                      
                                       """)
                                     Spacer()
                                     
                                 }
                                 .accessibilityElement(children: .ignore)
-                                .accessibilityLabel("We have updated the account area of the app to bring together your personal details, health choices and app settings.")
+                                .accessibilityLabel("No description for now.")
                                 .padding(16.0)
                             } else {
                                 //landscape mode here
@@ -65,14 +66,14 @@ struct WhatsNew: View {
                                         
                                         VStack(alignment: .leading) {
                                             Spacer()
-                                            Text("Introducing your new account area")
+                                            Text("Log in faster using your fingerprint")
                                                 .font(.title)
                                                 .fontWeight(.semibold)
                                             Text ("""
-                                              We've updated the account area to bring together your:
-                                              • personal details
-                                              • health choices
-                                              • app settings
+                                              You can turn on fingerprint log in for the NHS App.
+                                              
+                                              It's quicker and more secure than using a password
+                                              
                                               """)
                                             Spacer()
                                         }
@@ -88,9 +89,9 @@ struct WhatsNew: View {
                         .tag(1)
                         VStack(spacing: 24.0) {
                             Button(action: {
-                                showAccount.toggle()
+                                turnBiometrics.toggle()
                             }, label: {
-                                Text("Go to account now")
+                                Text("Turn on fingerprint log in")
                                     .fontWeight(.semibold)
                                     .padding(.horizontal, 16.0)
                                     .frame(height: 58.0)
@@ -106,7 +107,7 @@ struct WhatsNew: View {
                             Button(action: {
                                 dismiss()
                             }, label: {
-                                Text("Check later")
+                                Text("Not now")
                                     .fontWeight(.semibold)
                             }).sensoryFeedback(.impact, trigger: selectedTab)
                         }
@@ -122,15 +123,16 @@ struct WhatsNew: View {
         }
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.automatic)
-        .sheet(isPresented: $showAccount, content: {
-            AccountSettingsView()
-//                .presentationDetents([ .medium, .large])
-        })
+        .alert("Turn on TouchID?", isPresented: $turnBiometrics) {
+        Button("Ok") {
+            // Handle the action.
+        }
+    } message: {Text("This will turn on TouchID which lets you log in with your fingerprint")}
 
     }
 }
 
 #Preview {
-    WhatsNew()
+    WhatExistTips()
 }
 

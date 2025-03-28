@@ -29,6 +29,8 @@
 		4EACA8782D463EDE002309B4 /* PrescriptionTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EACA8772D463ED6002309B4 /* PrescriptionTip.swift */; };
 		4EB5D2942D95883200CF3953 /* WhatsNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB5D2932D95882B00CF3953 /* WhatsNew.swift */; };
 		4EB5D2B02D95AC9400CF3953 /* SampleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB5D2AF2D95AC8B00CF3953 /* SampleAnimation.swift */; };
+		4EB7AA912D96B2CF0022A636 /* WhatExistTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB7AA902D96B29B0022A636 /* WhatExistTips.swift */; };
+		4EB7AA932D96C4620022A636 /* AccountTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB7AA922D96C45B0022A636 /* AccountTip.swift */; };
 		4EC54BCC2B96FF05003EA856 /* DemoNHSAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC54BCB2B96FF05003EA856 /* DemoNHSAppApp.swift */; };
 		4EC54BCE2B96FF05003EA856 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC54BCD2B96FF05003EA856 /* ContentView.swift */; };
 		4EC54BD02B96FF08003EA856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC54BCF2B96FF08003EA856 /* Assets.xcassets */; };
@@ -80,6 +82,8 @@
 		4EACA8772D463ED6002309B4 /* PrescriptionTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrescriptionTip.swift; sourceTree = "<group>"; };
 		4EB5D2932D95882B00CF3953 /* WhatsNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNew.swift; sourceTree = "<group>"; };
 		4EB5D2AF2D95AC8B00CF3953 /* SampleAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAnimation.swift; sourceTree = "<group>"; };
+		4EB7AA902D96B29B0022A636 /* WhatExistTips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatExistTips.swift; sourceTree = "<group>"; };
+		4EB7AA922D96C45B0022A636 /* AccountTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTip.swift; sourceTree = "<group>"; };
 		4EC54BC82B96FF05003EA856 /* DemoNHSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoNHSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC54BCB2B96FF05003EA856 /* DemoNHSAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoNHSAppApp.swift; sourceTree = "<group>"; };
 		4EC54BCD2B96FF05003EA856 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -243,6 +247,7 @@
 				4EC54BE62B972B22003EA856 /* CardView.swift */,
 				4E5443982D06FDBB009B3BAB /* GettingStarted.swift */,
 				4EB5D2932D95882B00CF3953 /* WhatsNew.swift */,
+				4EB7AA902D96B29B0022A636 /* WhatExistTips.swift */,
 				4EB5D2AF2D95AC8B00CF3953 /* SampleAnimation.swift */,
 				4EFE35B32D4527DA00136D5D /* PrescriptionBarcode.swift */,
 				4EACA8752D463791002309B4 /* FloatingActionButton.swift */,
@@ -251,6 +256,7 @@
 				4EFE35B72D45377A00136D5D /* AddtoWalletButton.swift */,
 				4ECCCB1B2B9EE76000912BCA /* CampaignCardView.swift */,
 				4EAB1FA32CF2116700DF2F9F /* FeatureTip.swift */,
+				4EB7AA922D96C45B0022A636 /* AccountTip.swift */,
 				4EACA8772D463ED6002309B4 /* PrescriptionTip.swift */,
 				4E7E4DEE2B9F46470042625E /* ProfileCardView.swift */,
 				4E6B41552BCFC0820095808E /* ProfileCardViewB.swift */,
@@ -382,11 +388,13 @@
 				4E3AB8D52C99A6A1001F6167 /* LogOutv1.1.swift in Sources */,
 				4E682B6E2D4F5E2D00C9D3D7 /* UrgentCareSafariView.swift in Sources */,
 				4EC54BE22B9709B3003EA856 /* YourHealthView.swift in Sources */,
+				4EB7AA932D96C4620022A636 /* AccountTip.swift in Sources */,
 				4E3AB8D32C99A524001F6167 /* LogOutv3.swift in Sources */,
 				4EB5D2B02D95AC9400CF3953 /* SampleAnimation.swift in Sources */,
 				4ED1B08B2BA095BB0047BE43 /* HelpSupportView.swift in Sources */,
 				4ED032D32BA1E0B3000562D5 /* AccessServicesPromoView.swift in Sources */,
 				4EAB1FA42CF2116F00DF2F9F /* FeatureTip.swift in Sources */,
+				4EB7AA912D96B2CF0022A636 /* WhatExistTips.swift in Sources */,
 				4EACA8742D46306E002309B4 /* PrescriptionBarcode2.swift in Sources */,
 				4EC54BE02B9709A0003EA856 /* ServicesView.swift in Sources */,
 				4E7E4DEF2B9F46470042625E /* ProfileCardView.swift in Sources */,
@@ -548,13 +556,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DemoNHSApp/Preview Content\"";
 				DEVELOPMENT_TEAM = H4X544KPLA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DemoNHSApp/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "NHS App prototype B";
+				INFOPLIST_KEY_CFBundleDisplayName = "NHS App prototype C";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
@@ -564,8 +572,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tosincodexcode.NHSAppPrototypeB;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tosincodexcode.NHSAppPrototypeC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -585,13 +593,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DemoNHSApp/Preview Content\"";
 				DEVELOPMENT_TEAM = H4X544KPLA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DemoNHSApp/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "NHS App prototype B";
+				INFOPLIST_KEY_CFBundleDisplayName = "NHS App prototype C";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
@@ -601,8 +609,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tosincodexcode.NHSAppPrototypeB;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tosincodexcode.NHSAppPrototypeC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
