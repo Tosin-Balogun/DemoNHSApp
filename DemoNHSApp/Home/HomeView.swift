@@ -10,7 +10,7 @@ import TipKit
 
 struct HomeView: View {
     
-    let tip = FeatureTip()
+//    let tip = FeatureTip()
     @State private var trigger = false
     @State private var turnBiometrics = false
     
@@ -30,24 +30,7 @@ struct HomeView: View {
                             .padding(.horizontal, -8)
                             .padding(.bottom, -8)
                             .listRowBackground(Color("nhsGrey5").opacity(0.0))
-                        
-                        TipView(tip) { action in
-                            if action.id == "turn-touchid" {
-                                turnBiometrics.toggle()
-                            }
-                            
-                        }
-                            .listRowBackground(Color("nhsBlue").opacity(0.0))
-                            .padding(.horizontal, -16)
-                            .padding(.bottom, -24)
-                            .alert("Turn on TouchID?", isPresented: $turnBiometrics) {
-                            Button("Ok") {
-                                // Handle the action.
-                            }
-                        } message: {Text("This will turn on TouchID which lets you log in with your fingerprint")}
-                        
-                        
-                        
+
                         Section("Services") {
                             NavigationLink(destination: {
                                 RequestMedicines()
