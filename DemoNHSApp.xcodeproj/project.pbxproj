@@ -22,6 +22,7 @@
 		4E7E4DF22B9F4ED10042625E /* MessageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E4DF12B9F4ED10042625E /* MessageDetailView.swift */; };
 		4E7E4DF52B9F4FA90042625E /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E4DF42B9F4FA90042625E /* MessageListView.swift */; };
 		4E9E2A6B2CEA7E2700ED00A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E9E2A6A2CEA7E2700ED00A9 /* LaunchScreen.storyboard */; };
+		4EA4E6412D992E1600882634 /* AccountTip.lottie in Resources */ = {isa = PBXBuildFile; fileRef = 4EA4E6402D992E1600882634 /* AccountTip.lottie */; };
 		4EA713DF2D9844B600E99B96 /* AccountUpdateAnimation.lottie in Resources */ = {isa = PBXBuildFile; fileRef = 4EA713DE2D9844B600E99B96 /* AccountUpdateAnimation.lottie */; };
 		4EAB1FA42CF2116F00DF2F9F /* FeatureTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAB1FA32CF2116700DF2F9F /* FeatureTip.swift */; };
 		4EACA8722D462F90002309B4 /* BarcodeContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EACA8712D462F81002309B4 /* BarcodeContent.swift */; };
@@ -74,6 +75,7 @@
 		4E7E4DF42B9F4FA90042625E /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
 		4E9E2A6A2CEA7E2700ED00A9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E9E2A6C2CEA839200ED00A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4EA4E6402D992E1600882634 /* AccountTip.lottie */ = {isa = PBXFileReference; lastKnownFileType = file; path = AccountTip.lottie; sourceTree = "<group>"; };
 		4EA713DE2D9844B600E99B96 /* AccountUpdateAnimation.lottie */ = {isa = PBXFileReference; lastKnownFileType = file; path = AccountUpdateAnimation.lottie; sourceTree = "<group>"; };
 		4EAB1FA32CF2116700DF2F9F /* FeatureTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureTip.swift; sourceTree = "<group>"; };
 		4EACA8712D462F81002309B4 /* BarcodeContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeContent.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				4E113DBF2C9957C50030CF7C /* Logout */,
 				4EC54BE52B970A45003EA856 /* Components */,
 				4EC54BCF2B96FF08003EA856 /* Assets.xcassets */,
+				4EA4E6402D992E1600882634 /* AccountTip.lottie */,
 				4EFA6CA72D95DB98008FA017 /* NewAccount.lottie */,
 				4EA713DE2D9844B600E99B96 /* AccountUpdateAnimation.lottie */,
 				4EFA6C9E2D95D2AA008FA017 /* RabbitAnimation.json */,
@@ -368,6 +371,7 @@
 				4EC54BD32B96FF08003EA856 /* Preview Assets.xcassets in Resources */,
 				4EFA6CA82D95DB98008FA017 /* NewAccount.lottie in Resources */,
 				4EC54BD02B96FF08003EA856 /* Assets.xcassets in Resources */,
+				4EA4E6412D992E1600882634 /* AccountTip.lottie in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,7 +556,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"DemoNHSApp/Preview Content\"";
 				DEVELOPMENT_TEAM = H4X544KPLA;
 				ENABLE_PREVIEWS = YES;
@@ -568,7 +572,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.0;
+				MARKETING_VERSION = 6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tosincodexcode.NHSAppPrototypeB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -589,7 +593,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"DemoNHSApp/Preview Content\"";
 				DEVELOPMENT_TEAM = H4X544KPLA;
 				ENABLE_PREVIEWS = YES;
@@ -605,7 +609,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.0;
+				MARKETING_VERSION = 6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tosincodexcode.NHSAppPrototypeB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;

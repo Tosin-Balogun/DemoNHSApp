@@ -32,7 +32,7 @@ struct WhatsNew: View {
                                 
                                 VStack(alignment: .leading, spacing: 8.0) {
                                     
-                                    Spacer()
+//                                    Spacer()
                                     SampleAnimation()
                                     Text("Introducing your new account area")
                                         .font(.title)
@@ -104,6 +104,7 @@ struct WhatsNew: View {
                             }).sensoryFeedback(.impact, trigger: selectedTab)
                         }
                         .padding(.horizontal, 16.0)
+                        .padding(.vertical, 24.0)
                     }
                     
 
