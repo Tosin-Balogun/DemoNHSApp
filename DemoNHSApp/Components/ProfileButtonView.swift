@@ -11,6 +11,7 @@ struct ProfileButtonView: View {
     
     @State private var showProfile = false
     @State private var showHelp = false
+    @State var isButtonHidden = true
     let tip = AccountTip()
     
     var body: some View {
@@ -25,16 +26,36 @@ struct ProfileButtonView: View {
 //                    .frame(width: 34, height: 34)
 //                    .aspectRatio(contentMode: .fit)
             })
-            Button(action: {
-                showProfile.toggle()
-            }, label: {
-                Image(systemName: "person.circle")
-                    .accessibilityLabel("Account")
-//                    .resizable()
-//                    .frame(width: 34, height: 34)
-//                    .aspectRatio(contentMode: .fit)
-            })
-            .popoverTip(tip, arrowEdge: .bottom)
+            
+            Group{
+                if isButtonHidden {
+                    Button(action: {
+                        showProfile.toggle()
+                    }, label: {
+                        Image(systemName: "person.circle")
+                            .accessibilityLabel("Account")
+        //                    .resizable()
+        //                    .frame(width: 34, height: 34)
+        //                    .aspectRatio(contentMode: .fit)
+                    })
+                } else {
+                    Button(action: {
+                        showProfile.toggle()
+                    }, label: {
+                        Image(systemName: "person.circle")
+                            .accessibilityLabel("Account")
+        //                    .resizable()
+        //                    .frame(width: 34, height: 34)
+        //                    .aspectRatio(contentMode: .fit)
+                    })
+                    .popoverTip(tip, arrowEdge: .bottom)
+                }
+            }
+            .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 10.5) {
+                            self.isButtonHidden = false
+                        }
+                    }
             
         }
         .foregroundStyle(.nhsGrey)

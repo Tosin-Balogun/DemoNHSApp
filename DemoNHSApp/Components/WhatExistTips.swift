@@ -124,9 +124,12 @@ struct WhatExistTips: View {
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.automatic)
         .alert("Turn on TouchID?", isPresented: $turnBiometrics) {
-        Button("Ok") {
+        Button("Don't allow") {
             // Handle the action.
         }
+            Button("Ok") {
+                // Handle the action.
+            }
     } message: {Text("This will turn on TouchID which lets you log in with your fingerprint")}
 
     }
