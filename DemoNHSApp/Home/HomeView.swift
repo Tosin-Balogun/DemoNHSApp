@@ -33,9 +33,9 @@ struct HomeView: View {
 
                         Section("Services") {
                             NavigationLink(destination: {
-                                RequestMedicines()
+                                Text("Book a vaccination")
                             }, label: {
-                                Text("Request medicines")
+                                Text("Book a vaccination")
                                 
                             })
                             UrgentCareSafariView()
@@ -44,19 +44,25 @@ struct HomeView: View {
                         
                         
                         Section("Your health") {
-                            Text("GP health record")
+                            
                             NavigationLink(destination: {
-                                Prescriptions2()
+                                Text("Care plans")
                             }, label: {
-                                Text("Prescriptions")
+                                Text("Care plans")
                                 
                             })
                             NavigationLink(destination: {
-                                UpcomingAndPastAppointmentsView()
+                                Text("Your health choices")
                             }, label: {
-                                Text("Upcoming and past appointments")
+                                Text("Your health choices")
                                 
                             })
+//                            NavigationLink(destination: {
+//                                UpcomingAndPastAppointmentsView()
+//                            }, label: {
+//                                Text("Upcoming and past appointments")
+//                                
+//                            })
                         }
                         .padding(.vertical)
                         

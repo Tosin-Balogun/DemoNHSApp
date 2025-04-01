@@ -39,6 +39,7 @@ struct WhatsNew: View {
                                         .fontWeight(.semibold)
                                     Text ("""
                                       We've updated the account area to bring together your:
+                                      
                                       • personal details
                                       • health choices
                                       • app settings
@@ -63,6 +64,7 @@ struct WhatsNew: View {
                                                 .fontWeight(.semibold)
                                             Text ("""
                                               We've updated the account area to bring together your:
+                                              
                                               • personal details
                                               • health choices
                                               • app settings
@@ -79,32 +81,32 @@ struct WhatsNew: View {
                             }
                         }
                         .tag(1)
-                        VStack(spacing: 24.0) {
-                            Button(action: {
-                                showAccount.toggle()
-                            }, label: {
-                                Text("Go to account now")
-                                    .fontWeight(.semibold)
-                                    .padding(.horizontal, 16.0)
-                                    .frame(height: 58.0)
-                                    .frame(maxWidth: .infinity)
-                                    .foregroundStyle(.nhsWhite)
-                                    .background(.nhsGreen)
-                                    .font(.body)
-                                    .cornerRadius(8)
-                                    .shadow(color: Color("nhsDarkGreen"), radius: 0, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 4)
-                            })
-                            .sensoryFeedback(.impact, trigger: selectedTab)
-                            
-                            Button(action: {
-                                dismiss()
-                            }, label: {
-                                Text("Check later")
-                                    .fontWeight(.semibold)
-                            }).sensoryFeedback(.impact, trigger: selectedTab)
-                        }
-                        .padding(.horizontal, 16.0)
-                        .padding(.vertical, 24.0)
+//                        VStack(spacing: 24.0) {
+//                            Button(action: {
+//                                showAccount.toggle()
+//                            }, label: {
+//                                Text("Go to account now")
+//                                    .fontWeight(.semibold)
+//                                    .padding(.horizontal, 16.0)
+//                                    .frame(height: 58.0)
+//                                    .frame(maxWidth: .infinity)
+//                                    .foregroundStyle(.nhsWhite)
+//                                    .background(.nhsGreen)
+//                                    .font(.body)
+//                                    .cornerRadius(8)
+//                                    .shadow(color: Color("nhsDarkGreen"), radius: 0, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 4)
+//                            })
+//                            .sensoryFeedback(.impact, trigger: selectedTab)
+//                            
+//                            Button(action: {
+//                                dismiss()
+//                            }, label: {
+//                                Text("Check later")
+//                                    .fontWeight(.semibold)
+//                            }).sensoryFeedback(.impact, trigger: selectedTab)
+//                        }
+//                        .padding(.horizontal, 16.0)
+//                        .padding(.vertical, 24.0)
                     }
                     
 
@@ -116,6 +118,51 @@ struct WhatsNew: View {
         }
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.automatic)
+        .toolbar (content: {
+            ToolbarItem (placement: .bottomBar) {
+                HStack() {
+
+//                    if selectedTab > 1 {
+//                        
+//                        Button(action: {
+//                            withAnimation {
+//                                selectedTab -= 1
+//                            }
+//                        }, label: {
+//                            Image(systemName: "chevron.left")
+//                            Text("Previous")
+//                                .fontWeight(.semibold)
+//                        }).sensoryFeedback(.impact, trigger: selectedTab)
+//                    }
+//                    Spacer()
+//                    Text("\(selectedTab) of 4")
+                    Spacer()
+                    if selectedTab < 1 {
+                        
+                        Button(action: {
+                            withAnimation{
+                                selectedTab += 1
+                            }
+                        }, label: {
+                            Text("Next")
+                                .fontWeight(.semibold)
+                            Image(systemName: "chevron.right")
+                        }).sensoryFeedback(.impact, trigger: selectedTab)
+                    } else {
+                        withAnimation{
+                            
+                            Button(action: {
+                                dismiss()
+                            }, label: {
+                                Text("Done")
+                                    .fontWeight(.semibold)
+                            }).sensoryFeedback(.impact, trigger: selectedTab)
+                        }
+                    }
+                }
+            }
+            
+        })
         .sheet(isPresented: $showAccount, content: {
             AccountSettingsView()
 //                .presentationDetents([ .medium, .large])
