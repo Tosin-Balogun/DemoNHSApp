@@ -43,7 +43,7 @@ struct WhatExistTips: View {
                                         .font(.title)
                                         .fontWeight(.semibold)
                                     Text ("""
-                                      You can turn on fingerprint log in for the NHS App. It's quicker and more secure than using a password
+                                      You can turn on fingerprint login for the NHS App. It's quicker and more secure than using a password.
                                       
                                       """)
                                     Spacer()
@@ -68,7 +68,7 @@ struct WhatExistTips: View {
                                                 .font(.title)
                                                 .fontWeight(.semibold)
                                             Text ("""
-                                              You can turn on fingerprint log in for the NHS App. It's quicker and more secure than using a password
+                                              You can turn on fingerprint login for the NHS App. It's quicker and more secure than using a password.
                                               
                                               """)
                                             Spacer()
@@ -88,7 +88,7 @@ struct WhatExistTips: View {
                                 turnBiometrics.toggle()
                                 dismiss()
                             }, label: {
-                                Text("Turn on fingerprint log in")
+                                Text("Turn on fingerprint login")
                                     .fontWeight(.semibold)
                                     .padding(.horizontal, 16.0)
                                     .frame(height: 58.0)
@@ -121,14 +121,14 @@ struct WhatExistTips: View {
         }
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.automatic)
-        .alert("Turn on TouchID?", isPresented: $turnBiometrics) {
+        .alert("Turn on Touch ID?", isPresented: $turnBiometrics) {
 //        Button("Don't allow") {
 //            // Handle the action.
 //        }
 //            Button("Ok") {
 //                // Handle the action.
 //            }
-    } message: {Text("This will turn on TouchID which lets you log in with your fingerprint")}
+    } message: {Text("This will turn on Touch ID which lets you log in with your fingerprint")}
 
     }
 }

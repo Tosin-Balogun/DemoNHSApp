@@ -33,7 +33,7 @@ struct ServicesView: View {
                             NavigationLink(destination: {
                                 RequestMedicines()
                             }, label: {
-                                Text("Request medicines")
+                                Text("Request repeat prescriptions")
                                 
                             })
                             Text("Contact your GP for a document or update")

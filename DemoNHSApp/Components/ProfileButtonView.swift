@@ -52,7 +52,7 @@ struct ProfileButtonView: View {
                 }
             }
             .onAppear {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 20.5) {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 15.5) {
                             self.isButtonHidden = false
                         }
                     }

@@ -56,7 +56,7 @@ struct AccountSettingsView: View {
                                 Text("Contact details")
                                 
                             })
-                            Text("View or change GP surgery")
+                            Text("Your GP surgery")
                         }
                         .padding(.vertical)
                         

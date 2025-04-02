@@ -161,7 +161,7 @@ struct RequestMedicines: View {
                 //VStack housing the list stops here
                 
             }
-            .navigationTitle("Request medicines")
+            .navigationTitle("Request repeat prescriptions")
             .toolbar{
                 ToolbarItemGroup(placement: .automatic) {
                     ProfileButtonView()
