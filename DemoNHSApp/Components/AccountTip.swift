@@ -16,7 +16,7 @@ struct AccountTip: Tip {
     @State private var turnBiometrics = false
     
     var title: Text {
-        Text("Account updated")
+        Text("New in the app")
     }
 
 
