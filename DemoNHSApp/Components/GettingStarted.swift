@@ -63,8 +63,6 @@ struct GettingStarted: View {
                                 Spacer()
                                 
                             }
-                            .accessibilityElement(children: .ignore)
-                            .accessibilityLabel("When you start using the app, you'll be able to move between areas using the menu buttons at the top and bottom of the app.")
                             .padding(16.0)
                         } else {
                             //landscape mode here
@@ -88,11 +86,11 @@ struct GettingStarted: View {
                                 }
                                 
                             }
-                            .accessibilityElement(children: .ignore)
-                            .accessibilityLabel("When you start using the app, you'll be able to move between areas using the menu buttons at the top and bottom of the app.")
                             .padding(16.0)
                         }
                     }
+                    .accessibilityElement(children: .ignore)
+                    .accessibilityLabel("When you start using the app, you'll be able to move between areas using the menu buttons at the top and bottom of the app.")
                     .tag(2)
                     
                     ScrollView {
@@ -122,8 +120,6 @@ struct GettingStarted: View {
                                 
                             }
                             .padding(16.0)
-                            .accessibilityElement(children: .ignore)
-                            .accessibilityLabel("Use the services area in the bottom menu to start using NHS services or take steps to look after your health. In that area, you can request prescriptions, check for available GP appointments, find services near you and browse health information.")
                         } else {
                             //landscape mode here
                             VStack(alignment: .leading, spacing: 8.0) {
@@ -154,12 +150,12 @@ struct GettingStarted: View {
                                 }
                                 
                             }
-                            .accessibilityElement(children: .ignore)
-                            .accessibilityLabel("Use the services area in the bottom menu to start using NHS services or take steps to look after your health. In that area, you can request prescriptions, check for available GP appointments, find services near you and browse health information.")
                             .padding(16.0)
                         }
                         
                     }
+                    .accessibilityElement(children: .ignore)
+                    .accessibilityLabel("Use the services area in the bottom menu to start using NHS services or take steps to look after your health. In that area, you can request prescriptions, check for available GP appointments, find services near you and browse health information.")
                     .tag(3)
                     
                     ScrollView {
@@ -188,8 +184,6 @@ struct GettingStarted: View {
                                 
                             }
                             .padding(16.0)
-                            .accessibilityElement(children: .ignore)
-                            .accessibilityLabel("Use the 'your health' area in the bottom menu to view records and manage your healthcare. In that area, you can access your GP health record, manage GP and hospital appointments and check on your prescription requests.")
                         } else {
                             //landscape mode here
                             VStack(alignment: .leading, spacing: 8.0) {
@@ -219,12 +213,12 @@ struct GettingStarted: View {
                                 }
                                 
                             }
-                            .accessibilityElement(children: .ignore)
-                            .accessibilityLabel("Use the 'your health' area in the bottom menu to view records and manage your healthcare. In that area, you can access your GP health record, manage GP and hospital appointments and check on your prescription requests.")
                             .padding(16.0)
                         }
                         
                     }
+                    .accessibilityElement(children: .ignore)
+                    .accessibilityLabel("Use the 'your health' area in the bottom menu to view records and manage your healthcare. In that area, you can access your GP health record, manage GP and hospital appointments and check on your prescription requests.")
                     .tag(4)
                     
                     ScrollView {
@@ -246,8 +240,7 @@ struct GettingStarted: View {
                                 
                             }
                             .padding(16.0)
-                            .accessibilityElement(children: .ignore)
-                            .accessibilityLabel("Use the messages area in the bottom menu to read messages from your healthcare services. You can turn on notifications for these in the account and settings menu area of the app. Now, you can get started. Select the 'done' button below to start using the app.")
+                            
                         } else {
                             //landscape mode here
                             VStack(alignment: .leading, spacing: 8.0) {
@@ -271,12 +264,12 @@ struct GettingStarted: View {
                                 }
                                 
                             }
-                            .accessibilityElement(children: .ignore)
-                            .accessibilityLabel("Use the messages area in the bottom menu to read messages from your healthcare services. You can turn on notifications for these in the account and settings menu area of the app. Now, you can get started. Select the 'done' button below to start using the app.")
                             .padding(16.0)
                         }
                         
                     }
+                    .accessibilityElement(children: .ignore)
+                    .accessibilityLabel("Use the messages area in the bottom menu to read messages from your healthcare services. You can turn on notifications for these in the account and settings menu area of the app. Now, you can get started. Select the 'done' button below to start using the app.")
                     .tag(5)
                     
                     
@@ -285,6 +278,8 @@ struct GettingStarted: View {
                 }
                 .tabViewStyle(.page(indexDisplayMode: .always))
                 .indexViewStyle(.page(backgroundDisplayMode: .always))
+
+                
                 
             }
         }
