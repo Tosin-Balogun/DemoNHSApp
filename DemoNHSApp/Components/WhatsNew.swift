@@ -50,8 +50,6 @@ struct WhatsNew: View {
                                     Spacer()
                                     
                                 }
-                                .accessibilityElement(children: .ignore)
-                                .accessibilityLabel("We have updated the account area of the app to bring together your personal details, health choices and app settings.")
                                 .padding(16.0)
                             } else {
                                 //landscape mode here
@@ -80,11 +78,11 @@ struct WhatsNew: View {
                                     }
                                     
                                 }
-                                .accessibilityElement(children: .ignore)
-                                .accessibilityLabel("We have updated the account area of the app to bring together your personal details, health choices and app settings.")
                                 .padding(16.0)
                             }
                         }
+                        .accessibilityElement(children: .ignore)
+                        .accessibilityLabel("We have updated the account area of the app to bring together your personal details, health choices and app settings.")
                         .tag(1)
                         VStack(spacing: 24.0) {
                             Button(action: {
