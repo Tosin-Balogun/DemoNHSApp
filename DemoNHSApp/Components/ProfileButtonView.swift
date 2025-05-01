@@ -21,41 +21,42 @@ struct ProfileButtonView: View {
                 showHelp.toggle()
             }, label: {
                 Image(systemName: "questionmark.circle")
-                    .accessibilityLabel("Get help")
+                Text("Help")
+//                    .accessibilityLabel("Get help")
 //                    .resizable()
 //                    .frame(width: 34, height: 34)
 //                    .aspectRatio(contentMode: .fit)
             })
             
-            Group{
-                if isButtonHidden {
-                    Button(action: {
-                        showProfile.toggle()
-                    }, label: {
-                        Image(systemName: "person.circle")
-                            .accessibilityLabel("Account")
-        //                    .resizable()
-        //                    .frame(width: 34, height: 34)
-        //                    .aspectRatio(contentMode: .fit)
-                    })
-                } else {
-                    Button(action: {
-                        showProfile.toggle()
-                    }, label: {
-                        Image(systemName: "person.circle")
-                            .accessibilityLabel("Account")
-        //                    .resizable()
-        //                    .frame(width: 34, height: 34)
-        //                    .aspectRatio(contentMode: .fit)
-                    })
-                    .popoverTip(tip, arrowEdge: .bottom)
-                }
-            }
-            .onAppear {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 15.5) {
-                            self.isButtonHidden = false
-                        }
-                    }
+//            Group{
+//                if isButtonHidden {
+//                    Button(action: {
+//                        showProfile.toggle()
+//                    }, label: {
+//                        Image(systemName: "person.circle")
+//                            .accessibilityLabel("Account")
+//        //                    .resizable()
+//        //                    .frame(width: 34, height: 34)
+//        //                    .aspectRatio(contentMode: .fit)
+//                    })
+//                } else {
+//                    Button(action: {
+//                        showProfile.toggle()
+//                    }, label: {
+//                        Image(systemName: "person.circle")
+//                            .accessibilityLabel("Account")
+//        //                    .resizable()
+//        //                    .frame(width: 34, height: 34)
+//        //                    .aspectRatio(contentMode: .fit)
+//                    })
+//                    .popoverTip(tip, arrowEdge: .bottom)
+//                }
+//            }
+//            .onAppear {
+//                        DispatchQueue.main.asyncAfter(deadline: .now() + 15.5) {
+//                            self.isButtonHidden = false
+//                        }
+//                    }
             
         }
         .foregroundStyle(.nhsGrey)

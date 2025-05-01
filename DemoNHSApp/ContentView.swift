@@ -18,7 +18,7 @@ struct ContentView: View {
         TabView(selection: $tabSelection) {
             
             Group {
-                HomeView()
+                HomeWebView()
                     .tabItem { Label(
                         title: { Text("Home") },
                         icon: { Image(systemName: "house") }
@@ -59,7 +59,7 @@ struct ContentView: View {
 //        .popoverTip(tip, arrowEdge: .bottom)
 //        .tabViewStyle(.page(indexDisplayMode: .always))
         .sheet(isPresented: $showGettingStarted) {
-            WhatExistTips()
+            GettingStarted()
                 .interactiveDismissDisabled()
         }
     }
