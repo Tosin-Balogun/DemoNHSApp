@@ -111,6 +111,8 @@ struct GettingStarted: View {
                                     .padding(.bottom, 8.0)
                                 Text ("""
                               You can:
+                              • request repeat prescriptions
+                              • check for available GP appointments
                               • find services near you
                               • browse health information
                               """)
@@ -118,8 +120,6 @@ struct GettingStarted: View {
                                 
                             }
                             .padding(16.0)
-                            .accessibilityElement(children: .ignore)
-                            .accessibilityLabel("Use the services area in the bottom menu to start using NHS services or take steps to look after your health. In that area, you can request prescriptions, check for available GP appointments, find services near you and browse health information.")
                         } else {
                             //landscape mode here
                             VStack(alignment: .leading, spacing: 8.0) {
@@ -139,6 +139,8 @@ struct GettingStarted: View {
                                             .padding(.bottom, 8.0)
                                         Text ("""
                                       You can:
+                                      • request repeat prescriptions
+                                      • check for available GP appointments
                                       • find services near you
                                       • browse health information
                                       """)
@@ -174,8 +176,9 @@ struct GettingStarted: View {
                                     .padding(.bottom, 8.0)
                                 Text ("""
                                   You can:
-                                  • check on your prescription requests
+                                  • access your GP health record
                                   • manage GP and hospital appointments
+                                  • check on your prescription requests
                                   """)
                                 Spacer()
                                 
@@ -200,8 +203,9 @@ struct GettingStarted: View {
                                             .padding(.bottom, 8.0)
                                         Text ("""
                                           You can:
-                                          • check on your prescription requests
+                                          • access your GP health record
                                           • manage GP and hospital appointments
+                                          • check on your prescription requests
                                           """)
                                         Spacer()
                                     }
@@ -236,6 +240,7 @@ struct GettingStarted: View {
                                 
                             }
                             .padding(16.0)
+                            
                         } else {
                             //landscape mode here
                             VStack(alignment: .leading, spacing: 8.0) {
@@ -273,6 +278,8 @@ struct GettingStarted: View {
                 }
                 .tabViewStyle(.page(indexDisplayMode: .always))
                 .indexViewStyle(.page(backgroundDisplayMode: .always))
+
+                
                 
             }
         }

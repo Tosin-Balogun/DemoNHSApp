@@ -27,27 +27,19 @@ struct ContentView: View {
                 
                 ServicesView()
                     .tabItem { Label(
-                        title: { Text("Services") },
-                        icon: { Image(systemName: "cross") }
+                        title: { Text("Profile") },
+                        icon: { Image(systemName: "person.circle") }
                     ) }
                     .tag(1)
+
                 
-                
-                
-                YourHealthView()
-                    .tabItem { Label(
-                        title: { Text("Your health") },
-                        icon: { Image(systemName: "heart") }
-                    ) }
-                    .tag(2)
-                
-                MessagesView()
-                    .badge("2")
+                MessagesWebView()
+                    .badge("")
                     .tabItem { Label(
                         title: { Text("Messages") },
                         icon: { Image(systemName: "envelope") }
                     ) }
-                    .tag(3)
+                    .tag(2)
             }
             .toolbarBackground(.nhsBlue2, for: .tabBar)
             .toolbarBackground(.visible, for: .tabBar)
