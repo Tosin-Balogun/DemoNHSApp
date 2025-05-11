@@ -50,6 +50,8 @@
 		4ED1B08B2BA095BB0047BE43 /* HelpSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED1B08A2BA095BB0047BE43 /* HelpSupportView.swift */; };
 		4ED1B08D2BA0A95A0047BE43 /* ProfileButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED1B08C2BA0A95A0047BE43 /* ProfileButtonView.swift */; };
 		4ED1B08F2BA0CC300047BE43 /* UrgentCareOnlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED1B08E2BA0CC300047BE43 /* UrgentCareOnlineView.swift */; };
+		4ED1C8B52DD0A09C00FC4DF4 /* RNIBanimation.lottie in Resources */ = {isa = PBXBuildFile; fileRef = 4ED1C8B42DD0A09C00FC4DF4 /* RNIBanimation.lottie */; };
+		4ED1C8B72DD0AEA900FC4DF4 /* ProfileWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED1C8B62DD0AEA300FC4DF4 /* ProfileWebView.swift */; };
 		4ED27D552CF0C425008FB9A1 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED27D542CF0C41B008FB9A1 /* Filter.swift */; };
 		4EFA6C9F2D95D2AA008FA017 /* RabbitAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 4EFA6C9E2D95D2AA008FA017 /* RabbitAnimation.json */; };
 		4EFA6CA62D95DB39008FA017 /* DotLottie in Frameworks */ = {isa = PBXBuildFile; productRef = 4EFA6CA52D95DB39008FA017 /* DotLottie */; };
@@ -106,6 +108,8 @@
 		4ED1B08A2BA095BB0047BE43 /* HelpSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpSupportView.swift; sourceTree = "<group>"; };
 		4ED1B08C2BA0A95A0047BE43 /* ProfileButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButtonView.swift; sourceTree = "<group>"; };
 		4ED1B08E2BA0CC300047BE43 /* UrgentCareOnlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgentCareOnlineView.swift; sourceTree = "<group>"; };
+		4ED1C8B42DD0A09C00FC4DF4 /* RNIBanimation.lottie */ = {isa = PBXFileReference; lastKnownFileType = file; path = RNIBanimation.lottie; sourceTree = "<group>"; };
+		4ED1C8B62DD0AEA300FC4DF4 /* ProfileWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWebView.swift; sourceTree = "<group>"; };
 		4ED27D542CF0C41B008FB9A1 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 		4EFA6C9E2D95D2AA008FA017 /* RabbitAnimation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RabbitAnimation.json; sourceTree = "<group>"; };
 		4EFA6CA72D95DB98008FA017 /* NewAccount.lottie */ = {isa = PBXFileReference; lastKnownFileType = file; path = NewAccount.lottie; sourceTree = "<group>"; };
@@ -194,6 +198,7 @@
 				4EC54BE52B970A45003EA856 /* Components */,
 				4EC54BCF2B96FF08003EA856 /* Assets.xcassets */,
 				4EFA6CA72D95DB98008FA017 /* NewAccount.lottie */,
+				4ED1C8B42DD0A09C00FC4DF4 /* RNIBanimation.lottie */,
 				4EFA6C9E2D95D2AA008FA017 /* RabbitAnimation.json */,
 				4EC54BD12B96FF08003EA856 /* Preview Content */,
 			);
@@ -270,6 +275,7 @@
 				4ED1B08E2BA0CC300047BE43 /* UrgentCareOnlineView.swift */,
 				4ED032D02BA1B1B0000562D5 /* UrgentCareWebView.swift */,
 				4EAF17B72DC3930B00A795CB /* HomeWebView.swift */,
+				4ED1C8B62DD0AEA300FC4DF4 /* ProfileWebView.swift */,
 				4EAF17E72DC39C3D00A795CB /* MessagesWebView.swift */,
 				4E682B6D2D4F5E2100C9D3D7 /* UrgentCareSafariView.swift */,
 				4E6144662D94113C0071B66A /* FindServiceSafarView.swift */,
@@ -374,6 +380,7 @@
 				4EFA6C9F2D95D2AA008FA017 /* RabbitAnimation.json in Resources */,
 				4E9E2A6B2CEA7E2700ED00A9 /* LaunchScreen.storyboard in Resources */,
 				4EC54BD32B96FF08003EA856 /* Preview Assets.xcassets in Resources */,
+				4ED1C8B52DD0A09C00FC4DF4 /* RNIBanimation.lottie in Resources */,
 				4EFA6CA82D95DB98008FA017 /* NewAccount.lottie in Resources */,
 				4EC54BD02B96FF08003EA856 /* Assets.xcassets in Resources */,
 			);
@@ -400,6 +407,7 @@
 				4ED1B08B2BA095BB0047BE43 /* HelpSupportView.swift in Sources */,
 				4ED032D32BA1E0B3000562D5 /* AccessServicesPromoView.swift in Sources */,
 				4EAB1FA42CF2116F00DF2F9F /* FeatureTip.swift in Sources */,
+				4ED1C8B72DD0AEA900FC4DF4 /* ProfileWebView.swift in Sources */,
 				4EB7AA912D96B2CF0022A636 /* WhatExistTips.swift in Sources */,
 				4EACA8742D46306E002309B4 /* PrescriptionBarcode2.swift in Sources */,
 				4EC54BE02B9709A0003EA856 /* ServicesView.swift in Sources */,

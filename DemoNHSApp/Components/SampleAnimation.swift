@@ -16,7 +16,7 @@ struct SampleAnimation: View {
             //Something here
 //            LottieView(animation: .named("RabbitAnimation"))
 //                       .playing()
-            DotLottieAnimation(fileName: "NewAccount", config: AnimationConfig(autoplay: true, loop: true)).view()
+            DotLottieAnimation(fileName: "RNIBanimation", config: AnimationConfig(autoplay: true, loop: true)).view()
         }
         .frame(height: 450.0)
         

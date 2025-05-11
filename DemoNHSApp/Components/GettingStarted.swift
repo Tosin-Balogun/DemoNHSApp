@@ -37,14 +37,14 @@ struct GettingStarted: View {
                             .font(.largeTitle)
                             .fontWeight(.semibold)
                             .padding(.bottom, 8.0)
-                        Text("Before you start, here are some tips about finding your way around. ")
+                        Text("Before you start, here are some tips about using the app. ")
                         Spacer()
                         
                     }
                     .padding(16.0)
                     .tag(1)
                     .accessibilityElement(children: .ignore)
-                    .accessibilityLabel("Welcome to the NHS App. Before you start, here are some tips to help you find your way around.")
+                    .accessibilityLabel("Welcome to the NHS App. Before you start, here are some tips about using the app.")
                     
                     ScrollView {
                         if verticalSizeClass == .regular {
@@ -52,14 +52,14 @@ struct GettingStarted: View {
                             VStack(alignment: .leading, spacing: 8.0) {
                                 
                                 Spacer()
-                                Image("App menu image")
+                                Image("App menu image b")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .padding(.bottom, 8.0)
                                 Text("Moving around")
                                     .font(.title)
                                     .fontWeight(.semibold)
-                                Text("Use the menus at the top and bottom of the screen to reach different areas of the app.")
+                                Text("Use the menus at the bottom of the screen to move between the 3 main areas of the app.")
                                 Spacer()
                                 
                             }
@@ -69,7 +69,7 @@ struct GettingStarted: View {
                             VStack(alignment: .leading, spacing: 8.0) {
                                 
                                 HStack {
-                                    Image("App menu image")
+                                    Image("App menu image b")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
                                         .padding(.bottom, 8.0)
@@ -79,7 +79,7 @@ struct GettingStarted: View {
                                         Text("Moving around")
                                             .font(.title)
                                             .fontWeight(.semibold)
-                                        Text("Use the menus at the top and bottom of the screen to reach different areas of the app.")
+                                        Text("Use the menus at the bottom of the screen to move between the 3 main areas of the app.")
                                         Spacer()
                                     }
                                     .padding(.leading, 16.0)
@@ -90,7 +90,7 @@ struct GettingStarted: View {
                         }
                     }
                     .accessibilityElement(children: .ignore)
-                    .accessibilityLabel("When you start using the app, you'll be able to move between areas using the menu buttons at the top and bottom of the app.")
+                    .accessibilityLabel("When you start using the app, you can use the menu at the bottom of the screen to move between the 3 main areas of the app.")
                     .tag(2)
                     
                     ScrollView {
@@ -100,22 +100,51 @@ struct GettingStarted: View {
                             VStack(alignment: .leading, spacing: 8.0) {
                                 
                                 Spacer()
-                                Image("App services image 1")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
+                                SampleAnimation()
                                     .padding(.bottom, 8.0)
-                                Text("Services")
-                                    .font(.title)
-                                    .fontWeight(.semibold)
-                                Text("Select **Services** to start using NHS services or take steps to look after your health.")
-                                    .padding(.bottom, 8.0)
-                                Text ("""
-                              You can:
-                              • request repeat prescriptions
-                              • check for available GP appointments
-                              • find services near you
-                              • browse health information
-                              """)
+
+                                VStack(alignment: .leading, spacing: 24.0) {
+                                    HStack(alignment: .top) {
+                                        Image(systemName:"house.fill")
+                                            .font(.system(size: 24))
+                                            .foregroundColor(Color("nhsBlue"))
+                                        
+                                        VStack {
+                                            Text(" Manage your prescriptions, appointments and other NHS support in ")
+                                            +
+                                            Text("home")
+                                                .fontWeight(.semibold)
+                                                .foregroundStyle(Color.nhsBlue)
+                                        }
+                                    }
+                                    HStack(alignment: .top) {
+                                        Image(systemName:"person.circle.fill")
+                                            .font(.system(size: 24))
+                                            .foregroundColor(Color("nhsBlue"))
+                                        
+                                        VStack {
+                                            Text(" Check your personal details and settings in ")
+                                            +
+                                            Text("profiles")
+                                                .fontWeight(.semibold)
+                                                .foregroundStyle(Color.nhsBlue)
+                                        }
+                                    }
+                                    HStack(alignment: .top) {
+                                        Image(systemName:"envelope.fill")
+                                            .font(.system(size: 24))
+                                            .foregroundColor(Color("nhsBlue"))
+                                        
+                                        VStack {
+                                            Text(" Read communications from your healthcare services in ")
+                                            +
+                                            Text("messages")
+                                                .fontWeight(.semibold)
+                                                .foregroundStyle(Color.nhsBlue)
+                                        }
+                                    }
+                                }
+
                                 Spacer()
                                 
                             }
@@ -125,26 +154,49 @@ struct GettingStarted: View {
                             VStack(alignment: .leading, spacing: 8.0) {
                                 
                                 HStack {
-                                    Image("App services image 1")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
+                                    SampleAnimation()
                                         .padding(.bottom, 8.0)
                                     
-                                    VStack(alignment: .leading) {
-                                        Spacer()
-                                        Text("Services")
-                                            .font(.title)
-                                            .fontWeight(.semibold)
-                                        Text("Select **Services** to start using NHS services or take steps to look after your health.")
-                                            .padding(.bottom, 8.0)
-                                        Text ("""
-                                      You can:
-                                      • request repeat prescriptions
-                                      • check for available GP appointments
-                                      • find services near you
-                                      • browse health information
-                                      """)
-                                        Spacer()
+                                    VStack(alignment: .leading, spacing: 24.0) {
+                                        HStack(alignment: .top) {
+                                            Image(systemName:"house.fill")
+                                                .font(.system(size: 24))
+                                                .foregroundColor(Color("nhsBlue"))
+                                            
+                                            VStack {
+                                                Text(" Manage your prescriptions, appointments and other NHS support in ")
+                                                +
+                                                Text("home")
+                                                    .fontWeight(.semibold)
+                                                    .foregroundStyle(Color.nhsBlue)
+                                            }
+                                        }
+                                        HStack(alignment: .top) {
+                                            Image(systemName:"person.circle.fill")
+                                                .font(.system(size: 24))
+                                                .foregroundColor(Color("nhsBlue"))
+                                            
+                                            VStack {
+                                                Text(" Check your personal details and settings in ")
+                                                +
+                                                Text("profiles")
+                                                    .fontWeight(.semibold)
+                                                    .foregroundStyle(Color.nhsBlue)
+                                            }
+                                        }
+                                        HStack(alignment: .top) {
+                                            Image(systemName:"envelope.fill")
+                                                .font(.system(size: 24))
+                                                .foregroundColor(Color("nhsBlue"))
+                                            
+                                            VStack {
+                                                Text(" Read communications from your healthcare services in ")
+                                                +
+                                                Text("messages")
+                                                    .fontWeight(.semibold)
+                                                    .foregroundStyle(Color.nhsBlue)
+                                            }
+                                        }
                                     }
                                     .padding(.leading, 16.0)
                                 }
@@ -155,122 +207,122 @@ struct GettingStarted: View {
                         
                     }
                     .accessibilityElement(children: .ignore)
-                    .accessibilityLabel("Use the services area in the bottom menu to start using NHS services or take steps to look after your health. In that area, you can request prescriptions, check for available GP appointments, find services near you and browse health information.")
+                    .accessibilityLabel("Now, we'll explain what you can do in the 3 main areas of the app. In home, you can manage your prescriptions, appointments and other NHS support. In profile, you can check your personal details and settings. Finally, in messages, you can read messages from your healthcare services. Now, you can get started. Select the 'done' button to start using the app.")
                     .tag(3)
                     
-                    ScrollView {
-                        
-                        if verticalSizeClass == .regular {
-                            
-                            VStack(alignment: .leading, spacing: 8.0) {
-                                
-                                Spacer()
-                                Image("App your health image 1")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .padding(.bottom, 8.0)
-                                Text("Your health")
-                                    .font(.title)
-                                    .fontWeight(.semibold)
-                                Text("Select **Your health** to view records and manage your healthcare.")
-                                    .padding(.bottom, 8.0)
-                                Text ("""
-                                  You can:
-                                  • access your GP health record
-                                  • manage GP and hospital appointments
-                                  • check on your prescription requests
-                                  """)
-                                Spacer()
-                                
-                            }
-                            .padding(16.0)
-                        } else {
-                            //landscape mode here
-                            VStack(alignment: .leading, spacing: 8.0) {
-                                
-                                HStack {
-                                    Image("App your health image 1")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .padding(.bottom, 8.0)
-                                    
-                                    VStack(alignment: .leading) {
-                                        Spacer()
-                                        Text("Your health")
-                                            .font(.title)
-                                            .fontWeight(.semibold)
-                                        Text("Select **Your health** to view records and manage your healthcare.")
-                                            .padding(.bottom, 8.0)
-                                        Text ("""
-                                          You can:
-                                          • access your GP health record
-                                          • manage GP and hospital appointments
-                                          • check on your prescription requests
-                                          """)
-                                        Spacer()
-                                    }
-                                    .padding(.leading, 16.0)
-                                }
-                                
-                            }
-                            .padding(16.0)
-                        }
-                        
-                    }
-                    .accessibilityElement(children: .ignore)
-                    .accessibilityLabel("Use the 'your health' area in the bottom menu to view records and manage your healthcare. In that area, you can access your GP health record, manage GP and hospital appointments and check on your prescription requests.")
-                    .tag(4)
-                    
-                    ScrollView {
-                        
-                        if verticalSizeClass == .regular {
-                            VStack(alignment: .leading, spacing: 8.0) {
-                                
-                                Spacer()
-                                Image("App messages image 1")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .padding(.bottom, 8.0)
-                                Text("Messages")
-                                    .font(.title)
-                                    .fontWeight(.semibold)
-                                Text("Select **Messages** to read messages from your healthcare services. ")
-                                Text("You can turn on notifications for these in the account and settings area of the app.")
-                                Spacer()
-                                
-                            }
-                            .padding(16.0)
-                            
-                        } else {
-                            //landscape mode here
-                            VStack(alignment: .leading, spacing: 8.0) {
-                                
-                                HStack {
-                                    Image("App messages image 1")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .padding(.bottom, 8.0)
-                                    
-                                    VStack(alignment: .leading) {
-                                        Spacer()
-                                        Text("Messages")
-                                            .font(.title)
-                                            .fontWeight(.semibold)
-                                        Text("Select **Messages** to read messages from your healthcare services.")
-                                        Text("You can turn on notifications for these in the account and settings area of the app.")
-                                        Spacer()
-                                    }
-                                    .padding(.leading, 16.0)
-                                }
-                                
-                            }
-                            .padding(16.0)
-                        }
-                        
-                    }
-                    .accessibilityElement(children: .ignore)
-                    .accessibilityLabel("Use the messages area in the bottom menu to read messages from your healthcare services. You can turn on notifications for these in the account and settings menu area of the app. Now, you can get started. Select the 'done' button below to start using the app.")
-                    .tag(5)
+//                    ScrollView {
+//                        
+//                        if verticalSizeClass == .regular {
+//                            
+//                            VStack(alignment: .leading, spacing: 8.0) {
+//                                
+//                                Spacer()
+//                                Image("App your health image 1")
+//                                    .resizable()
+//                                    .aspectRatio(contentMode: .fit)
+//                                    .padding(.bottom, 8.0)
+//                                Text("Your health")
+//                                    .font(.title)
+//                                    .fontWeight(.semibold)
+//                                Text("Select **Your health** to view records and manage your healthcare.")
+//                                    .padding(.bottom, 8.0)
+//                                Text ("""
+//                                  You can:
+//                                  • access your GP health record
+//                                  • manage GP and hospital appointments
+//                                  • check on your prescription requests
+//                                  """)
+//                                Spacer()
+//                                
+//                            }
+//                            .padding(16.0)
+//                        } else {
+//                            //landscape mode here
+//                            VStack(alignment: .leading, spacing: 8.0) {
+//                                
+//                                HStack {
+//                                    Image("App your health image 1")
+//                                        .resizable()
+//                                        .aspectRatio(contentMode: .fit)
+//                                        .padding(.bottom, 8.0)
+//                                    
+//                                    VStack(alignment: .leading) {
+//                                        Spacer()
+//                                        Text("Your health")
+//                                            .font(.title)
+//                                            .fontWeight(.semibold)
+//                                        Text("Select **Your health** to view records and manage your healthcare.")
+//                                            .padding(.bottom, 8.0)
+//                                        Text ("""
+//                                          You can:
+//                                          • access your GP health record
+//                                          • manage GP and hospital appointments
+//                                          • check on your prescription requests
+//                                          """)
+//                                        Spacer()
+//                                    }
+//                                    .padding(.leading, 16.0)
+//                                }
+//                                
+//                            }
+//                            .padding(16.0)
+//                        }
+//                        
+//                    }
+//                    .accessibilityElement(children: .ignore)
+//                    .accessibilityLabel("Use the 'your health' area in the bottom menu to view records and manage your healthcare. In that area, you can access your GP health record, manage GP and hospital appointments and check on your prescription requests.")
+//                    .tag(4)
+//                    
+//                    ScrollView {
+//                        
+//                        if verticalSizeClass == .regular {
+//                            VStack(alignment: .leading, spacing: 8.0) {
+//                                
+//                                Spacer()
+//                                Image("App messages image 1")
+//                                    .resizable()
+//                                    .aspectRatio(contentMode: .fit)
+//                                    .padding(.bottom, 8.0)
+//                                Text("Messages")
+//                                    .font(.title)
+//                                    .fontWeight(.semibold)
+//                                Text("Select **Messages** to read messages from your healthcare services. ")
+//                                Text("You can turn on notifications for these in the account and settings area of the app.")
+//                                Spacer()
+//                                
+//                            }
+//                            .padding(16.0)
+//                            
+//                        } else {
+//                            //landscape mode here
+//                            VStack(alignment: .leading, spacing: 8.0) {
+//                                
+//                                HStack {
+//                                    Image("App messages image 1")
+//                                        .resizable()
+//                                        .aspectRatio(contentMode: .fit)
+//                                        .padding(.bottom, 8.0)
+//                                    
+//                                    VStack(alignment: .leading) {
+//                                        Spacer()
+//                                        Text("Messages")
+//                                            .font(.title)
+//                                            .fontWeight(.semibold)
+//                                        Text("Select **Messages** to read messages from your healthcare services.")
+//                                        Text("You can turn on notifications for these in the account and settings area of the app.")
+//                                        Spacer()
+//                                    }
+//                                    .padding(.leading, 16.0)
+//                                }
+//                                
+//                            }
+//                            .padding(16.0)
+//                        }
+//                        
+//                    }
+//                    .accessibilityElement(children: .ignore)
+//                    .accessibilityLabel("Use the messages area in the bottom menu to read messages from your healthcare services. You can turn on notifications for these in the account and settings menu area of the app. Now, you can get started. Select the 'done' button below to start using the app.")
+//                    .tag(5)
                     
                     
                     
@@ -304,7 +356,7 @@ struct GettingStarted: View {
 //                    Spacer()
 //                    Text("\(selectedTab) of 4")
                     Spacer()
-                    if selectedTab < 5 {
+                    if selectedTab < 3 {
                         
                         Button(action: {
                             withAnimation{
