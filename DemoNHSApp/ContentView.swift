@@ -25,7 +25,7 @@ struct ContentView: View {
                 ) }
                     .tag(0)
                 
-                ServicesView()
+                ProfileWebView()
                     .tabItem { Label(
                         title: { Text("Profile") },
                         icon: { Image(systemName: "person.circle") }

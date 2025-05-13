@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4E113DC12C995A3D0030CF7C /* LogOutv1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E113DC02C995A3D0030CF7C /* LogOutv1.swift */; };
 		4E113DC32C995F660030CF7C /* LogOutv2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E113DC22C995F660030CF7C /* LogOutv2.swift */; };
+		4E36574C2DD2458C0044772A /* NotificationsWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36574B2DD245820044772A /* NotificationsWebView.swift */; };
 		4E3AB8D32C99A524001F6167 /* LogOutv3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3AB8D22C99A524001F6167 /* LogOutv3.swift */; };
 		4E3AB8D52C99A6A1001F6167 /* LogOutv1.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3AB8D42C99A6A1001F6167 /* LogOutv1.1.swift */; };
 		4E3AB8D72C99AC01001F6167 /* LogOutv3.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3AB8D62C99AC01001F6167 /* LogOutv3.1.swift */; };
@@ -64,6 +65,7 @@
 /* Begin PBXFileReference section */
 		4E113DC02C995A3D0030CF7C /* LogOutv1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutv1.swift; sourceTree = "<group>"; };
 		4E113DC22C995F660030CF7C /* LogOutv2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutv2.swift; sourceTree = "<group>"; };
+		4E36574B2DD245820044772A /* NotificationsWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsWebView.swift; sourceTree = "<group>"; };
 		4E3AB8D22C99A524001F6167 /* LogOutv3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutv3.swift; sourceTree = "<group>"; };
 		4E3AB8D42C99A6A1001F6167 /* LogOutv1.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutv1.1.swift; sourceTree = "<group>"; };
 		4E3AB8D62C99AC01001F6167 /* LogOutv3.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutv3.1.swift; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 				4EAF17B72DC3930B00A795CB /* HomeWebView.swift */,
 				4ED1C8B62DD0AEA300FC4DF4 /* ProfileWebView.swift */,
 				4EAF17E72DC39C3D00A795CB /* MessagesWebView.swift */,
+				4E36574B2DD245820044772A /* NotificationsWebView.swift */,
 				4E682B6D2D4F5E2100C9D3D7 /* UrgentCareSafariView.swift */,
 				4E6144662D94113C0071B66A /* FindServiceSafarView.swift */,
 				4E682B6B2D4F5CEC00C9D3D7 /* SafariView.swift */,
@@ -423,6 +426,7 @@
 				4EFE35B82D45378200136D5D /* AddtoWalletButton.swift in Sources */,
 				4EFE35A22D45105D00136D5D /* FilterContent.swift in Sources */,
 				4E6B41562BCFC0820095808E /* ProfileCardViewB.swift in Sources */,
+				4E36574C2DD2458C0044772A /* NotificationsWebView.swift in Sources */,
 				4E7E4DF52B9F4FA90042625E /* MessageListView.swift in Sources */,
 				4ED032D12BA1B1B0000562D5 /* UrgentCareWebView.swift in Sources */,
 				4EFE35B42D4527E300136D5D /* PrescriptionBarcode.swift in Sources */,
@@ -572,7 +576,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"DemoNHSApp/Preview Content\"";
 				DEVELOPMENT_TEAM = H4X544KPLA;
 				ENABLE_PREVIEWS = YES;
@@ -588,7 +592,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tosincodexcode.PrototypeD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -609,7 +613,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"DemoNHSApp/Preview Content\"";
 				DEVELOPMENT_TEAM = H4X544KPLA;
 				ENABLE_PREVIEWS = YES;
@@ -625,7 +629,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tosincodexcode.PrototypeD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;

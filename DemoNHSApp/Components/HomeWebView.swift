@@ -16,7 +16,7 @@ struct HomeWebView: View {
     var body: some View {
         NavigationStack {
                         // 3
-                        WebView(url: URL(string: "https://nhsapp-native-prototype-d94f8d65c0f8.herokuapp.com/pages/home-p9")!)
+                        WebView(url: URL(string: "https://nhsapp-prototype-ia-native-f519007018d8.herokuapp.com/pages-rnib/home-p9")!)
 
                             .ignoresSafeArea()
                             .navigationTitle("")

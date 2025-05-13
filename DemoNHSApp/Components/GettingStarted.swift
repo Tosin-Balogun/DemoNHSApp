@@ -110,7 +110,7 @@ struct GettingStarted: View {
                                             .foregroundColor(Color("nhsBlue"))
                                         
                                         VStack {
-                                            Text(" Manage your prescriptions, appointments and other NHS support in ")
+                                            Text(" Manage prescriptions, appointments, vaccinations and other NHS support in ")
                                             +
                                             Text("home")
                                                 .fontWeight(.semibold)
@@ -164,7 +164,7 @@ struct GettingStarted: View {
                                                 .foregroundColor(Color("nhsBlue"))
                                             
                                             VStack {
-                                                Text(" Manage your prescriptions, appointments and other NHS support in ")
+                                                Text(" Manage prescriptions, appointments, vaccinations and other NHS support in ")
                                                 +
                                                 Text("home")
                                                     .fontWeight(.semibold)
@@ -207,71 +207,13 @@ struct GettingStarted: View {
                         
                     }
                     .accessibilityElement(children: .ignore)
-                    .accessibilityLabel("Now, we'll explain what you can do in the 3 main areas of the app. In home, you can manage your prescriptions, appointments and other NHS support. In profile, you can check your personal details and settings. Finally, in messages, you can read messages from your healthcare services. Now, you can get started. Select the 'done' button to start using the app.")
+                    .accessibilityLabel("Now, we'll explain what you can do in the 3 main areas of the app. In home, you can manage your prescriptions, appointments, vaccinations and other NHS support. In profile, you can check your personal details and settings. Finally, in messages, you can read messages from your healthcare services.")
                     .tag(3)
                     
-//                    ScrollView {
-//                        
-//                        if verticalSizeClass == .regular {
-//                            
-//                            VStack(alignment: .leading, spacing: 8.0) {
-//                                
-//                                Spacer()
-//                                Image("App your health image 1")
-//                                    .resizable()
-//                                    .aspectRatio(contentMode: .fit)
-//                                    .padding(.bottom, 8.0)
-//                                Text("Your health")
-//                                    .font(.title)
-//                                    .fontWeight(.semibold)
-//                                Text("Select **Your health** to view records and manage your healthcare.")
-//                                    .padding(.bottom, 8.0)
-//                                Text ("""
-//                                  You can:
-//                                  • access your GP health record
-//                                  • manage GP and hospital appointments
-//                                  • check on your prescription requests
-//                                  """)
-//                                Spacer()
-//                                
-//                            }
-//                            .padding(16.0)
-//                        } else {
-//                            //landscape mode here
-//                            VStack(alignment: .leading, spacing: 8.0) {
-//                                
-//                                HStack {
-//                                    Image("App your health image 1")
-//                                        .resizable()
-//                                        .aspectRatio(contentMode: .fit)
-//                                        .padding(.bottom, 8.0)
-//                                    
-//                                    VStack(alignment: .leading) {
-//                                        Spacer()
-//                                        Text("Your health")
-//                                            .font(.title)
-//                                            .fontWeight(.semibold)
-//                                        Text("Select **Your health** to view records and manage your healthcare.")
-//                                            .padding(.bottom, 8.0)
-//                                        Text ("""
-//                                          You can:
-//                                          • access your GP health record
-//                                          • manage GP and hospital appointments
-//                                          • check on your prescription requests
-//                                          """)
-//                                        Spacer()
-//                                    }
-//                                    .padding(.leading, 16.0)
-//                                }
-//                                
-//                            }
-//                            .padding(16.0)
-//                        }
-//                        
-//                    }
-//                    .accessibilityElement(children: .ignore)
-//                    .accessibilityLabel("Use the 'your health' area in the bottom menu to view records and manage your healthcare. In that area, you can access your GP health record, manage GP and hospital appointments and check on your prescription requests.")
-//                    .tag(4)
+                    VStack {
+                        NotificationsWebView()
+                    }
+                    .tag(4)
 //                    
 //                    ScrollView {
 //                        
@@ -356,7 +298,7 @@ struct GettingStarted: View {
 //                    Spacer()
 //                    Text("\(selectedTab) of 4")
                     Spacer()
-                    if selectedTab < 3 {
+                    if selectedTab < 4 {
                         
                         Button(action: {
                             withAnimation{
