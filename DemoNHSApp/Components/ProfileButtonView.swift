@@ -21,7 +21,7 @@ struct ProfileButtonView: View {
                 showHelp.toggle()
             }, label: {
                 Image(systemName: "questionmark.circle")
-                Text("Help")
+                Text("App help")
 //                    .accessibilityLabel("Get help")
 //                    .resizable()
 //                    .frame(width: 34, height: 34)
