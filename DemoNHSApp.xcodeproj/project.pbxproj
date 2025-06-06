@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4E113DC12C995A3D0030CF7C /* LogOutv1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E113DC02C995A3D0030CF7C /* LogOutv1.swift */; };
 		4E113DC32C995F660030CF7C /* LogOutv2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E113DC22C995F660030CF7C /* LogOutv2.swift */; };
+		4E14E57F2DF076B900860EEA /* DotLottie in Frameworks */ = {isa = PBXBuildFile; productRef = 4E14E57E2DF076B900860EEA /* DotLottie */; };
+		4E14E5822DF0772D00860EEA /* SampleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E14E5812DF0772700860EEA /* SampleAnimation.swift */; };
+		4E14E5842DF0776700860EEA /* RNIBanimation.lottie in Resources */ = {isa = PBXBuildFile; fileRef = 4E14E5832DF0776700860EEA /* RNIBanimation.lottie */; };
 		4E3AB8D32C99A524001F6167 /* LogOutv3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3AB8D22C99A524001F6167 /* LogOutv3.swift */; };
 		4E3AB8D52C99A6A1001F6167 /* LogOutv1.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3AB8D42C99A6A1001F6167 /* LogOutv1.1.swift */; };
 		4E3AB8D72C99AC01001F6167 /* LogOutv3.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3AB8D62C99AC01001F6167 /* LogOutv3.1.swift */; };
@@ -20,6 +23,7 @@
 		4E7E4DF22B9F4ED10042625E /* MessageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E4DF12B9F4ED10042625E /* MessageDetailView.swift */; };
 		4E7E4DF52B9F4FA90042625E /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E4DF42B9F4FA90042625E /* MessageListView.swift */; };
 		4E9E2A6B2CEA7E2700ED00A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E9E2A6A2CEA7E2700ED00A9 /* LaunchScreen.storyboard */; };
+		4EA807AA2DF2FD5500DA3F03 /* MovingAround.lottie in Resources */ = {isa = PBXBuildFile; fileRef = 4EA807A92DF2FD5500DA3F03 /* MovingAround.lottie */; };
 		4EAB1FA42CF2116F00DF2F9F /* FeatureTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAB1FA32CF2116700DF2F9F /* FeatureTip.swift */; };
 		4EACA8722D462F90002309B4 /* BarcodeContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EACA8712D462F81002309B4 /* BarcodeContent.swift */; };
 		4EACA8742D46306E002309B4 /* PrescriptionBarcode2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EACA8732D463066002309B4 /* PrescriptionBarcode2.swift */; };
@@ -51,6 +55,8 @@
 /* Begin PBXFileReference section */
 		4E113DC02C995A3D0030CF7C /* LogOutv1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutv1.swift; sourceTree = "<group>"; };
 		4E113DC22C995F660030CF7C /* LogOutv2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutv2.swift; sourceTree = "<group>"; };
+		4E14E5812DF0772700860EEA /* SampleAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAnimation.swift; sourceTree = "<group>"; };
+		4E14E5832DF0776700860EEA /* RNIBanimation.lottie */ = {isa = PBXFileReference; lastKnownFileType = file; path = RNIBanimation.lottie; sourceTree = "<group>"; };
 		4E3AB8D22C99A524001F6167 /* LogOutv3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutv3.swift; sourceTree = "<group>"; };
 		4E3AB8D42C99A6A1001F6167 /* LogOutv1.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutv1.1.swift; sourceTree = "<group>"; };
 		4E3AB8D62C99AC01001F6167 /* LogOutv3.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutv3.1.swift; sourceTree = "<group>"; };
@@ -64,6 +70,7 @@
 		4E7E4DF42B9F4FA90042625E /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
 		4E9E2A6A2CEA7E2700ED00A9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E9E2A6C2CEA839200ED00A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4EA807A92DF2FD5500DA3F03 /* MovingAround.lottie */ = {isa = PBXFileReference; lastKnownFileType = file; path = MovingAround.lottie; sourceTree = "<group>"; };
 		4EAB1FA32CF2116700DF2F9F /* FeatureTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureTip.swift; sourceTree = "<group>"; };
 		4EACA8712D462F81002309B4 /* BarcodeContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeContent.swift; sourceTree = "<group>"; };
 		4EACA8732D463066002309B4 /* PrescriptionBarcode2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrescriptionBarcode2.swift; sourceTree = "<group>"; };
@@ -104,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E14E57F2DF076B900860EEA /* DotLottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +179,8 @@
 				4E113DBF2C9957C50030CF7C /* Logout */,
 				4EC54BE52B970A45003EA856 /* Components */,
 				4EC54BCF2B96FF08003EA856 /* Assets.xcassets */,
+				4E14E5832DF0776700860EEA /* RNIBanimation.lottie */,
+				4EA807A92DF2FD5500DA3F03 /* MovingAround.lottie */,
 				4EC54BD12B96FF08003EA856 /* Preview Content */,
 			);
 			path = DemoNHSApp;
@@ -242,6 +252,7 @@
 				4ED1B08E2BA0CC300047BE43 /* UrgentCareOnlineView.swift */,
 				4ED032D02BA1B1B0000562D5 /* UrgentCareWebView.swift */,
 				4E682B6D2D4F5E2100C9D3D7 /* UrgentCareSafariView.swift */,
+				4E14E5812DF0772700860EEA /* SampleAnimation.swift */,
 				4E682B6B2D4F5CEC00C9D3D7 /* SafariView.swift */,
 				4ED032D22BA1E0B3000562D5 /* AccessServicesPromoView.swift */,
 			);
@@ -322,6 +333,9 @@
 				Base,
 			);
 			mainGroup = 4EC54BBF2B96FF05003EA856;
+			packageReferences = (
+				4E14E57D2DF076B900860EEA /* XCRemoteSwiftPackageReference "dotlottie-ios" */,
+			);
 			productRefGroup = 4EC54BC92B96FF05003EA856 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -337,8 +351,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E9E2A6B2CEA7E2700ED00A9 /* LaunchScreen.storyboard in Resources */,
+				4EA807AA2DF2FD5500DA3F03 /* MovingAround.lottie in Resources */,
 				4EC54BD32B96FF08003EA856 /* Preview Assets.xcassets in Resources */,
 				4EC54BD02B96FF08003EA856 /* Assets.xcassets in Resources */,
+				4E14E5842DF0776700860EEA /* RNIBanimation.lottie in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4ED032D62BA20D14000562D5 /* UpcomingAndPastAppointmentsView.swift in Sources */,
+				4E14E5822DF0772D00860EEA /* SampleAnimation.swift in Sources */,
 				4ED27D552CF0C425008FB9A1 /* Filter.swift in Sources */,
 				4ECCCB1C2B9EE76000912BCA /* CampaignCardView.swift in Sources */,
 				4ED1B0882BA0708E0047BE43 /* AccountSettingsView.swift in Sources */,
@@ -517,7 +534,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"DemoNHSApp/Preview Content\"";
 				DEVELOPMENT_TEAM = H4X544KPLA;
 				ENABLE_PREVIEWS = YES;
@@ -532,7 +549,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.0;
+				MARKETING_VERSION = 7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tosincodexcode.DemoNHSApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -553,7 +570,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"DemoNHSApp/Preview Content\"";
 				DEVELOPMENT_TEAM = H4X544KPLA;
 				ENABLE_PREVIEWS = YES;
@@ -568,7 +585,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.0;
+				MARKETING_VERSION = 7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tosincodexcode.DemoNHSApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -604,6 +621,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4E14E57D2DF076B900860EEA /* XCRemoteSwiftPackageReference "dotlottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LottieFiles/dotlottie-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4E14E57E2DF076B900860EEA /* DotLottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E14E57D2DF076B900860EEA /* XCRemoteSwiftPackageReference "dotlottie-ios" */;
+			productName = DotLottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4EC54BC02B96FF05003EA856 /* Project object */;
 }
